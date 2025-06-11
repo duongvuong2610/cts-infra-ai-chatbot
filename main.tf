@@ -15,9 +15,13 @@ module "s3" {
 #   depends_on = [module.iam]
 # }
 
-# module "iam" {
-#   source = "./modules/iam"
-# }
+module "iam" {
+  source = "./modules/iam"
+
+  s3_bucket_arn = module.s3.vertor_search_s3_bucket_arn
+
+  depends_on = [module.s3]
+}
 
 module "dynamodb_table" {
   source = "./modules/dynamodb_table"
@@ -77,9 +81,13 @@ module "vpc_endpoints" {
 
 # OpenSearch Serverless - OSS
 module "opensearch_serverless" {
-  source                          = "./modules/opensearch_serverless"
-  # bedrock_knowledge_base_role_arn = module.iam.bedrock_knowledge_base_role_arn
-  # opensearch_collection_name      = var.opensearch_collection_name
-  # opensearch_index_config         = var.opensearch_index_config
+  source = "./modules/opensearch_serverless"
 }
 
+# module "oss_vector_search" {
+#   source = "./modules/oss_vector_search"
+
+#   bedrock_knowledge_base_role_arn = module.iam.bedrock_knowledge_base_role_arn
+
+#   depends_on = [module.iam]
+# }

@@ -80,7 +80,7 @@ resource "aws_iam_role_policy" "bedrock_opensearch_policy" {
       Sid      = "OpenSearchAccess",
       Effect   = "Allow",
       Action   = ["aoss:APIAccessAll"],
-      Resource = [var.iam_config.bedrock_knowledge_base.opensearch_collection_arn]
+      Resource = ["*"]
     }]
   })
 }
@@ -92,12 +92,12 @@ resource "aws_iam_role_policy" "s3_policy" {
   policy = jsonencode({
     Version = "2012-10-17",
     Statement = [{
-      Sid      = "AllowAllS3Actions",
-      Effect   = "Allow",
-      Action   = "s3:*",
+      Sid    = "AllowAllS3Actions",
+      Effect = "Allow",
+      Action = "s3:*",
       Resource = [
-        var.iam_config.bedrock_knowledge_base.s3_bucket_arn,
-        "${var.iam_config.bedrock_knowledge_base.s3_bucket_arn}/*"
+        var.s3_bucket_arn,
+        "${var.s3_bucket_arn}/*"
       ]
     }]
   })
