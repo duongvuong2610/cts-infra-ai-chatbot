@@ -1,3 +1,4 @@
+# IAM Role and Profile for EC2
 resource "aws_iam_role" "ec2_role" {
   name = var.iam_config.ec2.role_name
   assume_role_policy = jsonencode({
@@ -9,6 +10,11 @@ resource "aws_iam_role" "ec2_role" {
       Principal = { Service = "ec2.amazonaws.com" }
     }]
   })
+}
+
+resource "aws_iam_instance_profile" "ec2_profile" {
+  name = var.iam_config.ec2.instance_profile
+  role = aws_iam_role.ec2_role.name
 }
 
 resource "aws_iam_role_policy_attachment" "attach_ssm_policy" {
@@ -34,11 +40,6 @@ resource "aws_iam_role_policy_attachment" "attach_opensearch_policy" {
 resource "aws_iam_role_policy_attachment" "attach_dynamodb_policy" {
   role       = aws_iam_role.ec2_role.name
   policy_arn = "arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess_v2"
-}
-
-resource "aws_iam_instance_profile" "ec2_profile" {
-  name = var.iam_config.ec2.instance_profile
-  role = aws_iam_role.ec2_role.name
 }
 
 # IAM Role for Bedrock
@@ -96,8 +97,8 @@ resource "aws_iam_role_policy" "s3_policy" {
       Effect = "Allow",
       Action = "s3:*",
       Resource = [
-        var.s3_bucket_arn,
-        "${var.s3_bucket_arn}/*"
+        var.iam_config.bedrock_knowledge_base.s3_bucket_arn,
+        "${var.iam_config.bedrock_knowledge_base.s3_bucket_arn}/*"
       ]
     }]
   })

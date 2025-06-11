@@ -1,100 +1,107 @@
 data "aws_caller_identity" "current" {}
 
 # Create OpenSearch Serverless Collection - TYPE: SEARCH
-resource "aws_opensearchserverless_collection" "example-collection" {
-  name             = var.opensearch_collection_name
-  standby_replicas = "DISABLED"
-  type             = "SEARCH"
+resource "aws_opensearchserverless_collection" "search_collection" {
+  name             = var.search_collection.name
+  standby_replicas = var.search_collection.standby_replicas
+  type             = var.search_collection.type
 
-  depends_on = [aws_opensearchserverless_security_policy.encryption_policy]
+  depends_on = [aws_opensearchserverless_security_policy.search_collection_encryption_policy]
 }
 
-# Create Encryption Security Policy
-resource "aws_opensearchserverless_security_policy" "encryption_policy" {
-  name        = "${var.opensearch_collection_name}-encrypt-policy"
-  type        = "encryption"
-  description = "encryption security policy for ${var.opensearch_collection_name}"
-
-  policy = jsonencode({
-    Rules = [
-      {
-        Resource     = ["collection/${var.opensearch_collection_name}"]
-        ResourceType = "collection"
-      }
-    ],
-    AWSOwnedKey = true
-  })
+resource "aws_opensearchserverless_security_policy" "search_collection_encryption_policy" {
+  name        = var.search_collection.encryption_policy.name
+  type        = var.search_collection.encryption_policy.type
+  description = var.search_collection.encryption_policy.description
+  policy      = var.search_collection.encryption_policy.policy
 }
 
-# Create Network Security Policy
-resource "aws_opensearchserverless_security_policy" "network_policy" {
-  name        = "${var.opensearch_collection_name}-network-policy"
-  type        = "network"
-  description = "Public access"
-
-  policy = jsonencode([
-    {
-      Description = "Public access to collection and Dashboards endpoint for ${var.opensearch_collection_name}",
-      Rules = [
-        {
-          ResourceType = "collection",
-          Resource     = ["collection/${var.opensearch_collection_name}"]
-        },
-        {
-          ResourceType = "dashboard",
-          Resource     = ["collection/${var.opensearch_collection_name}"]
-        }
-      ],
-      AllowFromPublic = true
-    }
-  ])
+resource "aws_opensearchserverless_security_policy" "search_collection_network_policy" {
+  name        = var.search_collection.network_policy.name
+  type        = var.search_collection.network_policy.type
+  description = var.search_collection.network_policy.description
+  policy      = var.search_collection.network_policy.policy
 }
 
-# Create Data Access Policy
-resource "aws_opensearchserverless_access_policy" "data_access_policy" {
-  name        = "${var.opensearch_collection_name}-access-policy"
-  type        = "data"
-  description = "read and write permissions"
-
-  policy = jsonencode([
-    {
-      Rules = [
-        {
-          ResourceType = "index",
-          Resource     = ["index/${var.opensearch_collection_name}/*"],
-          Permission   = ["aoss:*"]
-        },
-        {
-          ResourceType = "collection",
-          Resource     = ["collection/${var.opensearch_collection_name}"],
-          Permission   = ["aoss:*"]
-        }
-      ],
-      Principal = [
-        data.aws_caller_identity.current.arn,
-        "arn:aws:iam::187091248012:user/lltien",
-        "arn:aws:iam::187091248012:user/lvthinh1"
-      ]
-    }
-  ])
+resource "aws_opensearchserverless_access_policy" "search_collection_data_access_policy" {
+  name        = var.search_collection.data_access_policy.name
+  type        = var.search_collection.data_access_policy.type
+  description = var.search_collection.data_access_policy.description
+  policy      = var.search_collection.data_access_policy.policy
 
   depends_on = [
-    aws_opensearchserverless_collection.example-collection
+    aws_opensearchserverless_collection.search_collection
   ]
 }
 
-# Create OpenSearch Index
-resource "opensearch_index" "example_index" {
-  provider           = opensearch.signed
-  name               = var.opensearch_index_config.name
-  number_of_shards   = var.opensearch_index_config.number_of_shards
-  number_of_replicas = var.opensearch_index_config.number_of_replicas
-  force_destroy      = var.opensearch_index_config.force_destroy
-  mappings           = var.opensearch_index_config.mappings
+# Create OpenSearch Serverless Collection - TYPE: VECTORSEARCH
+resource "aws_opensearchserverless_collection" "vector_collection" {
+  name             = var.vector_collection.name
+  standby_replicas = var.vector_collection.standby_replicas
+  type             = var.vector_collection.type
+
+  depends_on = [aws_opensearchserverless_security_policy.vector_collection_encryption_policy]
+}
+
+resource "aws_opensearchserverless_security_policy" "vector_collection_encryption_policy" {
+  name        = var.vector_collection.encryption_policy.name
+  type        = var.vector_collection.encryption_policy.type
+  description = var.vector_collection.encryption_policy.description
+  policy      = var.vector_collection.encryption_policy.policy
+}
+
+resource "aws_opensearchserverless_security_policy" "vector_collection_network_policy" {
+  name        = var.vector_collection.network_policy.name
+  type        = var.vector_collection.network_policy.type
+  description = var.vector_collection.network_policy.description
+  policy      = var.vector_collection.network_policy.policy
+}
+
+resource "aws_opensearchserverless_access_policy" "vector_collection_data_access_policy" {
+  name        = var.vector_collection.data_access_policy.name
+  type        = var.vector_collection.data_access_policy.type
+  description = var.vector_collection.data_access_policy.description
+  policy      = var.vector_collection.data_access_policy.policy
 
   depends_on = [
-    aws_opensearchserverless_collection.example-collection,
-    null_resource.wait_for_policy_sync
+    aws_opensearchserverless_collection.vector_collection
+  ]
+}
+
+# Create OpenSearch Indexes
+resource "opensearch_index" "search_collection_index" {
+  provider           = opensearch.signed-search
+  name               = var.search_collection_index.name
+  number_of_shards   = var.search_collection_index.number_of_shards
+  number_of_replicas = var.search_collection_index.number_of_replicas
+  force_destroy      = var.search_collection_index.force_destroy
+  mappings           = var.search_collection_index.mappings
+
+  depends_on = [
+    aws_opensearchserverless_collection.search_collection,
+    null_resource.wait_for_policy_sync_01
+  ]
+
+  lifecycle {
+    ignore_changes = [
+      mappings # Ignore changes to mappings
+    ]
+  }
+}
+
+resource "opensearch_index" "vector_collection_index" {
+  provider                       = opensearch.signed-vector
+  name                           = var.vector_collection_index.name
+  number_of_shards               = var.vector_collection_index.number_of_shards
+  number_of_replicas             = var.vector_collection_index.number_of_replicas
+  index_knn                      = var.vector_collection_index.index_knn
+  index_knn_algo_param_ef_search = var.vector_collection_index.index_knn_algo_param_ef_search
+  force_destroy                  = var.vector_collection_index.force_destroy
+  mappings                       = var.vector_collection_index.mappings
+
+  depends_on = [
+    aws_opensearchserverless_collection.vector_collection,
+    null_resource.wait_for_policy_sync_02
   ]
 
   lifecycle {
@@ -105,9 +112,19 @@ resource "opensearch_index" "example_index" {
 }
 
 # Wait for policy sync
-resource "null_resource" "wait_for_policy_sync" {
+resource "null_resource" "wait_for_policy_sync_01" {
   triggers = {
-    access_policy = aws_opensearchserverless_access_policy.data_access_policy.id
+    access_policy = aws_opensearchserverless_access_policy.search_collection_data_access_policy.id
+  }
+
+  provisioner "local-exec" {
+    command = "sleep 60"
+  }
+}
+
+resource "null_resource" "wait_for_policy_sync_02" {
+  triggers = {
+    access_policy = aws_opensearchserverless_access_policy.vector_collection_data_access_policy.id
   }
 
   provisioner "local-exec" {

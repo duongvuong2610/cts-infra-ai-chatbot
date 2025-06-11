@@ -1,37 +1,81 @@
-variable "opensearch_collection_name" {
-  description = "Name of the OpenSearch collection"
-  type        = string
-  default     = "char-search"
+variable "search_collection" {
+  description = "Configuration of an OpenSearch collection - type: SEARCH"
+
+  type = object({
+    name             = string
+    standby_replicas = string
+    type             = string
+    encryption_policy = object({
+      name        = string
+      type        = string
+      description = string
+      policy      = string # JSON string
+    })
+    network_policy = object({
+      name        = string
+      type        = string
+      description = string
+      policy      = string
+    })
+    data_access_policy = object({
+      name        = string
+      type        = string
+      description = string
+      policy      = string
+    })
+  })
 }
 
-variable "opensearch_index_config" {
-  description = "Configuration for the OpenSearch index"
+variable "vector_collection" {
+  description = "Configuration of an OpenSearch collection - type: VECTORSEARCH"
+
+  type = object({
+    name             = string
+    standby_replicas = string
+    type             = string
+    encryption_policy = object({
+      name        = string
+      type        = string
+      description = string
+      policy      = string # JSON string
+    })
+    network_policy = object({
+      name        = string
+      type        = string
+      description = string
+      policy      = string
+    })
+    data_access_policy = object({
+      name        = string
+      type        = string
+      description = string
+      policy      = string
+    })
+  })
+}
+
+variable "search_collection_index" {
+  description = "Configuration for the OpenSearch Search collection index"
+
+  type = object({
+    name               = string
+    number_of_shards   = string
+    number_of_replicas = string
+    force_destroy      = bool
+    mappings           = string
+  })
+}
+
+variable "vector_collection_index" {
+  description = "Configuration for the OpenSearch Vector collection index"
+
   type = object({
     name                           = string
     number_of_shards               = string
     number_of_replicas             = string
+    index_knn                      = bool
+    index_knn_algo_param_ef_search = string
     force_destroy                  = bool
     mappings                       = string
   })
-
-  default = {
-    name                           = "charmander-loptop-index"
-    number_of_shards               = "2"
-    number_of_replicas             = "0"
-    force_destroy                  = true
-    mappings                       = <<EOF
-{
-  "properties": {
-    "AMAZON_BEDROCK_METADATA": {
-      "type": "text",
-      "index": true
-    },
-    "AMAZON_BEDROCK_TEXT_CHUNK": {
-      "type": "text",
-      "index": true
-    }
-  }
-}
-EOF
-  }
 }

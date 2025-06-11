@@ -9,15 +9,4 @@ variable "dynamodb_table" {
       type = string
     }))
   })
-
-  default = {
-    name     = "ai-chatbot-session-chat"
-    hash_key = "id"
-    attributes = [
-      {
-        name = "id"
-        type = "N"
-      }
-    ]
-  }
 }
