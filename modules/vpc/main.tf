@@ -9,5 +9,4 @@ module "vpc" {
   enable_nat_gateway = var.vpc.enable_nat_gateway
   single_nat_gateway = var.vpc.single_nat_gateway
   one_nat_gateway_per_az = var.vpc.one_nat_gateway_per_az
-  tags               = var.vpc.tags
 }

@@ -8,10 +8,6 @@ variable "dynamodb_table" {
       name = string
       type = string
     }))
-    tags = object({
-      Owner     = string
-      Terraform = string
-    })
   })
 
   default = {
@@ -23,9 +19,5 @@ variable "dynamodb_table" {
         type = "N"
       }
     ]
-    tags = {
-      Owner     = "CTX"
-      Terraform = "true"
-    }
   }
 }

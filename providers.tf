@@ -6,6 +6,8 @@ provider "aws" {
   default_tags {
     tags = {
       Purpose = "lab-poc"
+      Owner     = "CTX"
+      Terraform = "true"
     }
   }
 }

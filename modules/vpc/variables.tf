@@ -10,10 +10,6 @@ variable "vpc" {
     enable_nat_gateway = bool
     single_nat_gateway = bool
     one_nat_gateway_per_az = bool
-    tags = object({
-      Owner     = string
-      Terraform = string
-    })
   })
 
   default = {
@@ -25,9 +21,5 @@ variable "vpc" {
     enable_nat_gateway = true
     single_nat_gateway = true
     one_nat_gateway_per_az = false
-    tags = {
-      Owner     = "CTX"
-      Terraform = "true"
-    }
   }
 }

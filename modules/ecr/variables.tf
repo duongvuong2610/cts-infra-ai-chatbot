@@ -2,8 +2,7 @@ variable "ecr" {
   description = "Configuration for creating the ECR"
 
   type = object({
-    repository_name                   = string
-    repository_read_write_access_arns = list(string)
+    repository_name = string
     repository_lifecycle_policy = object({
       rules = list(object({
         rulePriority = number,
@@ -19,15 +18,10 @@ variable "ecr" {
         })
       }))
     })
-    tags = object({
-      Owner     = string
-      Terraform = string
-    })
   })
 
   default = {
-    repository_name                   = "ctx-ai-chatbot-ecr"
-    repository_read_write_access_arns = ["arn:aws:iam::012345678901:role/terraform"]
+    repository_name = "lab/ai-chatbot"
     repository_lifecycle_policy = {
       rules = [
         {
@@ -45,9 +39,10 @@ variable "ecr" {
         }
       ]
     }
-    tags = {
-      Owner     = "CTX"
-      Terraform = "true"
-    }
   }
+}
+
+variable "repository_read_write_access_arns" {
+  description = "The ARNs of the IAM users/roles that have read/write access to the repository"
+  type        = list(string)
 }

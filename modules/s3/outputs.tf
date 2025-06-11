@@ -1,4 +1,9 @@
-output "s3_bucket_ids" {
-  description = "Map of created S3 bucket names"
-  value = { for k, v in module.s3 : k => v.s3_bucket_id }
+output "source_crawl_s3_bucket_arn" {
+  description = "ARN of created S3 vector search"
+  value = module.s3_source_crawl.s3_bucket_arn
+}
+
+output "vertor_search_s3_bucket_arn" {
+  description = "ARN of created S3 vector search"
+  value = module.s3_vector_search.s3_bucket_arn
 }

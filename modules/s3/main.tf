@@ -1,14 +1,23 @@
-module "s3" {
+module "s3_source_crawl" {
   source = "terraform-aws-modules/s3-bucket/aws"
 
-  for_each = var.s3
-
-  bucket                   = each.key
-  acl                      = each.value.acl
-  control_object_ownership = each.value.control_object_ownership
-  object_ownership         = each.value.object_ownership
+  bucket                   = var.s3_source_crawl.bucket
+  acl                      = var.s3_source_crawl.acl
+  control_object_ownership = var.s3_source_crawl.control_object_ownership
+  object_ownership         = var.s3_source_crawl.object_ownership
   versioning = {
-    enabled = each.value.versioning
+    enabled = var.s3_source_crawl.versioning
   }
 }
 
+module "s3_vector_search" {
+  source = "terraform-aws-modules/s3-bucket/aws"
+
+  bucket                   = var.s3_vector_search.bucket
+  acl                      = var.s3_vector_search.acl
+  control_object_ownership = var.s3_vector_search.control_object_ownership
+  object_ownership         = var.s3_vector_search.object_ownership
+  versioning = {
+    enabled = var.s3_vector_search.versioning
+  }
+}
