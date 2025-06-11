@@ -9,6 +9,9 @@ variable "iam_config" {
       role_name             = string
       foundation_model_arns = list(string)
       s3_bucket_arn         = string
+    }),
+    lambda = object({
+      role_name = string
     })
   })
 }

@@ -27,10 +27,6 @@ variable "parsing_configuration" {
     model_arn             = string
     parsing_prompt_string = string
   })
-  default = {
-    model_arn = ""
-    
-  }
 }
 
 variable "chunking_configuration" {

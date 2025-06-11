@@ -1,9 +1,11 @@
-# output "opensearch_collection_arn" {
-#   description = "The ARN of the OpenSearch collection"
-#   value = aws_opensearchserverless_collection.example-collection.arn
-# }
+output "search_collection_arn" {
+  value = aws_opensearchserverless_collection.search_collection.arn
+}
 
-# output "vector_index_name" {
-#   description = "The name of the OpenSearch index"
-#   value = opensearch_index.example_index.name
-# }
+output "vector_collection_arn" {
+  value = aws_opensearchserverless_collection.vector_collection.arn
+}
+
+output "vector_collection_index_name" {
+  value = opensearch_index.vector_collection_index.name
+}

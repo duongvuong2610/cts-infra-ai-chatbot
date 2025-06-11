@@ -123,6 +123,9 @@ module "iam" {
         "arn:aws:bedrock:ap-southeast-2::foundation-model/anthropic.claude-3-5-sonnet-20241022-v2:0",
         "arn:aws:bedrock:ap-southeast-2::foundation-model/anthropic.claude-3-7-sonnet-20250219-v1:0"
       ]
+    },
+    lambda = {
+      role_name = "charmander-lambda-role"
     }
   }
 
@@ -137,41 +140,100 @@ module "sg" {
   depends_on = [module.vpc]
 }
 
-# module "alb" {
-#   source = "./modules/alb"
+module "bedrock" {
+  source = "./modules/bedrock"
 
-#   vpc_id             = module.vpc.vpc_id
-#   subnets            = module.vpc.public_subnets
-#   security_group_ids = module.sg.alb_sg_id
+  knowledge_base_config = {
+    name                            = "ai-chatbot-knowledge-base"
+    bedrock_knowledge_base_role_arn = module.iam.bedrock_knowledge_base_role_arn
+    embedding_model_arn             = "arn:aws:bedrock:ap-southeast-2::foundation-model/cohere.embed-multilingual-v3"
+    opensearch_collection_arn       = module.opensearch_serverless.vector_collection_arn
+    vector_index_name               = module.opensearch_serverless.vector_collection_index_name
+    vector_field                    = "bedrock-knowledge-base-default-vector"
+    text_field                      = "AMAZON_BEDROCK_TEXT_CHUNK"
+    metadata_field                  = "AMAZON_BEDROCK_METADATA"
+    tags                            = {}
+  }
 
-#   depends_on = [module.vpc, module.sg]
-# }
+  data_source_config = {
+    name       = "S3-data-source"
+    bucket_arn = module.s3.vector_search_s3_bucket_arn
+  }
 
-# module "bedrock" {
-#   source = "./modules/bedrock"
+  parsing_configuration = {
+    model_arn             = "arn:aws:bedrock:ap-southeast-2::foundation-model/anthropic.claude-3-7-sonnet-20250219-v1:0"
+    parsing_prompt_string = <<-PROMPT
+      Bạn là trợ lý giúp phân loại vào đọc dữ liệu từ ảnh đầu vào.
+      ## Mục tiêu
+      Phân tích file ảnh được cung cấp, xác định loại ảnh và trích xuất mọi thông tin dạng văn bản hoặc nội dung có ý nghĩa.
 
-#   knowledge_base_config = merge(
-#     var.knowledge_base_config,
-#     {
-#       name                            = local.knowledge_base_name
-#       bedrock_knowledge_base_role_arn = module.iam.bedrock_knowledge_base_role_arn
-#       opensearch_collection_arn       = module.opensearch_serverless.opensearch_collection_arn
-#       vector_index_name               = module.opensearch_serverless.vector_index_name
-#     }
-#   )
+      ## Định nghĩa các loại ảnh
+      Hãy phân tích file ảnh đầu vào và xác định ảnh thuộc một trong năm loại sau đây:
 
-#   data_source_config = merge(
-#     var.data_source_config,
-#     {
-#       bucket_arn = module.s3.s3_bucket_arn
-#     }
-#   )
+      1. **Ảnh chứa văn bản (Text Images)**: Ảnh chủ yếu chứa nội dung văn bản như tài liệu, thông báo, đoạn văn, vv. Các nội dung này cần được nhận dạng và trích xuất đầy đủ, giữ nguyên cấu trúc và định dạng khi có thể.
 
-#   parsing_configuration  = var.parsing_configuration
-#   chunking_configuration = var.chunking_configuration
+      2. **Biểu đồ/Sơ đồ (Charts/Diagrams)**: Ảnh chứa flowchart, sơ đồ quy trình, biểu đồ tổ chức, mind map, hoặc các biểu đồ diễn giải mối quan hệ. Cần nhận diện cấu trúc logic, các nút (nodes), liên kết (connections), và trình tự của quy trình.
 
-#   depends_on = [module.opensearch]
-# }
+      3. **Ảnh minh họa nghiệp vụ (Business Illustrations)**: Ảnh miêu tả hoạt động nghiệp vụ, thủ tục công việc, hoặc tình huống thực tế trong môi trường làm việc. Cần mô tả chi tiết các hoạt động, đối tượng, và ngữ cảnh.
+
+      4. **Ảnh chứa bảng biểu (Tables)**: Ảnh chứa dữ liệu được tổ chức thành hàng và cột. Cần trích xuất thành cấu trúc bảng rõ ràng, giữ nguyên mối quan hệ giữa các ô dữ liệu.
+
+      5. **Ảnh chứa ký hiệu/công thức đặc thù (Specialized Symbols/Formulas)**: Ảnh chứa công thức toán học, ký hiệu khoa học, phương trình, hoặc ký hiệu chuyên ngành. Cần trích xuất và diễn giải ký hiệu chính xác.
+
+      ## Yêu cầu phân tích và trích xuất
+
+      ### Bước 1: Phân loại ảnh
+      - Xác định ảnh đầu vào thuộc loại nào trong năm loại trên
+      - Cung cấp lý do chi tiết tại sao ảnh được xếp vào loại đó
+      - Nếu ảnh có thể thuộc nhiều loại, hãy xác định loại chính và loại phụ
+
+      ### Bước 2: Trích xuất nội dung
+      Dựa trên loại ảnh đã xác định, trích xuất thông tin theo hướng dẫn sau:
+
+      **Đối với ảnh chứa văn bản:**
+      - Trích xuất toàn bộ văn bản có trong ảnh
+      - Giữ nguyên cấu trúc đoạn văn, dòng, và định dạng quan trọng
+      - Nhận diện và phân biệt tiêu đề, phụ đề, nội dung chính bằng markdown.
+      - Đánh dấu những phần văn bản không thể đọc được (nếu có)
+
+      **Đối với biểu đồ/sơ đồ:**
+      - Trích xuất tên biểu đồ nếu có.
+      - Tái tạo cấu trúc biểu đồ bằng văn bản hoặc định dạng markdown khi có thể.
+      - Mô tả luồng hoạt động của biểu đồ.
+
+      **Đối với ảnh minh họa nghiệp vụ:**
+      - Mô tả tổng quan về tình huống/hoạt động được minh họa
+      - Nhận diện các đối tượng, người, vật, địa điểm trong ảnh
+      - Giải thích bối cảnh và ý nghĩa của hoạt động
+      - Trích xuất mọi văn bản hoặc nhãn đi kèm
+
+      **Đối với ảnh chứa bảng biểu:**
+      - Tái tạo cấu trúc bảng hoàn chỉnh dưới dạng văn bản hoặc markdown
+      - Đảm bảo căn chỉnh đúng các cột
+      - Trích xuất tiêu đề bảng, tiêu đề cột, và tất cả dữ liệu trong ô
+      - Giữ nguyên định dạng số (nếu có thể nhận diện)
+
+      **Đối với ảnh chứa ký hiệu/công thức đặc thù:**
+      - Trích xuất công thức hoặc ký hiệu bằng định dạng LaTeX hoặc cú pháp phù hợp
+      - Giải thích ý nghĩa của công thức/ký hiệu nếu có thể
+      - Diễn giải các biến số hoặc ký hiệu đặc biệt
+      - Liên hệ công thức với ngữ cảnh của ảnh (nếu có)
+
+      ## Format trình bày:
+      - Loại ảnh (không cần nêu lý do phân loại).
+      - Thông tin trích rút (Tuân thủ theo bước 2 đối với từng loại ảnh)
+    PROMPT
+  }
+
+  chunking_configuration = {
+    strategy                        = "SEMANTIC"
+    max_token                       = 512
+    breakpoint_percentile_threshold = 95
+    buffer_size                     = 0
+  }
+
+  depends_on = [module.opensearch_serverless, module.iam]
+}
 
 # OpenSearch Serverless - OSS
 module "opensearch_serverless" {
@@ -366,4 +428,57 @@ EOF
 EOF
   }
 
+}
+
+module "event_bridge" {
+  source = "./modules/event_bridge"
+}
+
+module "lambda" {
+  source = "./modules/lambda"
+
+  lambda_function = {
+    function_name = "s3-to-opensearch"
+    role          = module.iam.lambda_role_arn
+    filename      = "./modules/lambda/lambda.zip"
+    handler       = "index.handler"
+    runtime       = "python3.9"
+  }
+
+  depends_on = [module.iam]
+}
+
+module "ecs" {
+  source = "./modules/ecs"
+
+  ecs_cluster = {
+    name = "ai-chatbot-cluster"
+  }
+}
+
+module "ec2" {
+  source = "./modules/ec2"
+
+  ec2_instance = {
+    name                   = "ai-chatbot-ec2"
+    subnet_id              = element(module.vpc.private_subnets, 0)
+    instance_type          = "m5.large"
+    ami                    = "ami-00543daa0ad4d3ea4"
+    vpc_security_group_ids = [module.sg.server_sg_id]
+  }
+
+  depends_on = [module.vpc, module.sg]
+}
+
+module "alb" {
+  source = "./modules/alb"
+
+  alb = {
+    name            = "ai-chatbot-alb"
+    vpc_id          = module.vpc.vpc_id
+    subnets         = module.vpc.public_subnets
+    security_groups = [module.sg.alb_sg_id]
+  }
+
+  depends_on = [module.vpc, module.sg]
 }
