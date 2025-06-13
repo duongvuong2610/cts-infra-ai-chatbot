@@ -22,3 +22,8 @@ output "public_route_table_ids" {
   description = "List of IDs of public route tables"
   value = module.vpc.public_route_table_ids
 }
+
+output "vpc_cidr_block" {
+  description = "The CIDR block of the VPC"
+  value = module.vpc.vpc_cidr_block
+}

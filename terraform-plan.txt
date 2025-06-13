@@ -1,0 +1,1340 @@
+[0m[1mmodule.ecs.module.ecs_service_scheduled_crawling_jobs.aws_iam_role_policy_attachment.task_exec[0]: Refreshing state... [id=scheduled_crawling_jobs-20250612081844235100000009-2025061208184658010000000c][0m
+[0m[1mmodule.ecs.module.autoscaling_sg.aws_security_group_rule.egress_rules[0]: Refreshing state... [id=sgrule-3645600062][0m
+[0m[1mmodule.ecs.module.autoscaling_sg.aws_security_group_rule.computed_ingress_with_source_security_group_id[0]: Refreshing state... [id=sgrule-763456588][0m
+[0m[1mmodule.ecs.module.ecs_cluster.aws_cloudwatch_log_group.this[0]: Refreshing state... [id=/aws/ecs/ai-chatbot-ecs][0m
+[0m[1mmodule.ecs.module.ecs_service_scheduled_crawling_jobs.aws_security_group.this[0]: Refreshing state... [id=sg-07f63dd723ac07c42][0m
+[0m[1mmodule.ecs.module.alb.aws_lb_target_group.this["ex_ecs"]: Refreshing state... [id=arn:aws:elasticloadbalancing:ap-southeast-2:187091248012:targetgroup/tf-20250612081844176300000007/96876b579b46fdff][0m
+[0m[1mmodule.ecs.module.autoscaling["single_instance"].aws_iam_instance_profile.this[0]: Refreshing state... [id=ai-chatbot-ecs-20250612101609001200000002][0m
+[0m[1mmodule.ecs.module.ecs_service_scheduled_crawling_jobs.aws_appautoscaling_policy.this["cpu"]: Refreshing state... [id=cpu][0m
+[0m[1mmodule.ecs.module.autoscaling_sg.aws_security_group.this_name_prefix[0]: Refreshing state... [id=sg-0efc7e3b4e8e836c4][0m
+[0m[1mmodule.ecs.module.ecs_service_scheduled_crawling_jobs.aws_ecs_service.this[0]: Refreshing state... [id=arn:aws:ecs:ap-southeast-2:187091248012:service/ai-chatbot-ecs/scheduled_crawling_jobs][0m
+[0m[1mmodule.ecs.module.ecs_cluster.aws_ecs_capacity_provider.this["single_instance"]: Refreshing state... [id=arn:aws:ecs:ap-southeast-2:187091248012:capacity-provider/single_instance][0m
+[0m[1mmodule.ecs.module.autoscaling["single_instance"].aws_autoscaling_group.idc[0]: Refreshing state... [id=ai-chatbot-ecs-single_instance-20250612101624169000000007][0m
+[0m[1mmodule.ecs.module.alb.aws_lb_listener.this["ex_http"]: Refreshing state... [id=arn:aws:elasticloadbalancing:ap-southeast-2:187091248012:listener/app/ai-chatbot-ecs/ae06071ce4f2da22/1ad8bb6d51795181][0m
+[0m[1mmodule.ecs.module.ecs_service_scheduled_crawling_jobs.module.container_definition["scheduled_crawling_jobs"].aws_cloudwatch_log_group.this[0]: Refreshing state... [id=/aws/ecs/scheduled_crawling_jobs/scheduled_crawling_jobs][0m
+[0m[1mmodule.ecs.module.autoscaling["single_instance"].aws_iam_role_policy_attachment.this["AmazonSSMManagedInstanceCore"]: Refreshing state... [id=ai-chatbot-ecs-20250612101606973900000001-20250612101609342900000003][0m
+[0m[1mmodule.ecs.module.alb.aws_vpc_security_group_ingress_rule.this["all_http"]: Refreshing state... [id=sgr-031849d0181f58d4f][0m
+[0m[1mmodule.ecs.module.ecs_service_scheduled_crawling_jobs.aws_appautoscaling_target.this[0]: Refreshing state... [id=service/ai-chatbot-ecs/scheduled_crawling_jobs][0m
+[0m[1mmodule.ecs.module.ecs_cluster.aws_ecs_cluster.this[0]: Refreshing state... [id=arn:aws:ecs:ap-southeast-2:187091248012:cluster/ai-chatbot-ecs][0m
+[0m[1mmodule.ecs.module.ecs_service_scheduled_crawling_jobs.aws_ecs_task_definition.this[0]: Refreshing state... [id=scheduled_crawling_jobs][0m
+[0m[1mmodule.ecs.module.ecs_service_scheduled_crawling_jobs.aws_security_group_rule.this["all_egress"]: Refreshing state... [id=sgrule-76947631][0m
+[0m[1mmodule.ecs.module.ecs_cluster.aws_ecs_cluster_capacity_providers.this[0]: Refreshing state... [id=ai-chatbot-ecs][0m
+[0m[1mmodule.ecs.module.alb.aws_vpc_security_group_egress_rule.this["all"]: Refreshing state... [id=sgr-0ceff1cad2eaa9882][0m
+[0m[1mmodule.ecs.module.ecs_service_scheduled_crawling_jobs.aws_security_group_rule.this["alb_http_ingress"]: Refreshing state... [id=sgrule-2274003588][0m
+[0m[1mmodule.ecs.module.alb.aws_security_group.this[0]: Refreshing state... [id=sg-0bbe13802e7a5ce2c][0m
+[0m[1mmodule.ecs.module.autoscaling["single_instance"].aws_iam_role.this[0]: Refreshing state... [id=ai-chatbot-ecs-20250612101606973900000001][0m
+[0m[1mmodule.ecs.module.autoscaling["single_instance"].aws_launch_template.this[0]: Refreshing state... [id=lt-0d4ba7112414116ca][0m
+[0m[1mmodule.ecs.module.ecs_service_scheduled_crawling_jobs.aws_iam_policy.task_exec[0]: Refreshing state... [id=arn:aws:iam::187091248012:policy/scheduled_crawling_jobs-20250612081844204000000008][0m
+[0m[1mmodule.ecs.module.ecs_service_scheduled_crawling_jobs.aws_iam_role.tasks[0]: Refreshing state... [id=scheduled_crawling_jobs-20250612081844174500000003][0m
+[0m[1mmodule.ecs.module.autoscaling["single_instance"].aws_iam_role_policy_attachment.this["AmazonEC2ContainerServiceforEC2Role"]: Refreshing state... [id=ai-chatbot-ecs-20250612101606973900000001-20250612101609709300000004][0m
+[0m[1mmodule.ecs.module.ecs_service_scheduled_crawling_jobs.aws_iam_role.task_exec[0]: Refreshing state... [id=scheduled_crawling_jobs-20250612081844235100000009][0m
+[0m[1mmodule.ecs.module.ecs_service_scheduled_crawling_jobs.aws_appautoscaling_policy.this["memory"]: Refreshing state... [id=memory][0m
+[0m[1mmodule.s3.module.s3_vector_search.data.aws_region.current: Reading...[0m[0m
+[0m[1mmodule.s3.module.s3_vector_search.data.aws_region.current: Read complete after 0s [id=ap-southeast-2][0m
+[0m[1mmodule.ecs.module.alb.aws_lb.this[0]: Refreshing state... [id=arn:aws:elasticloadbalancing:ap-southeast-2:187091248012:loadbalancer/app/ai-chatbot-ecs/ae06071ce4f2da22][0m
+[0m[1mmodule.ecs_cluster.data.aws_ssm_parameter.ecs_optimized_ami: Reading...[0m[0m
+[0m[1mmodule.vpc.module.vpc.aws_vpc.this[0]: Refreshing state... [id=vpc-010f0c49acfaea735][0m
+[0m[1mmodule.opensearch_serverless.data.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mmodule.opensearch_serverless.data.aws_region.current: Reading...[0m[0m
+[0m[1mmodule.opensearch_serverless.data.aws_region.current: Read complete after 0s [id=ap-southeast-2][0m
+[0m[1mmodule.s3.module.s3_source_crawl.data.aws_canonical_user_id.this[0]: Reading...[0m[0m
+[0m[1mmodule.opensearch_serverless.data.aws_caller_identity.current: Read complete after 1s [id=187091248012][0m
+[0m[1mmodule.s3.module.s3_vector_search.data.aws_partition.current: Reading...[0m[0m
+[0m[1mmodule.s3.module.s3_vector_search.data.aws_partition.current: Read complete after 0s [id=aws][0m
+[0m[1mmodule.s3.module.s3_source_crawl.data.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mmodule.s3.module.s3_source_crawl.data.aws_caller_identity.current: Read complete after 0s [id=187091248012][0m
+[0m[1mdata.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mmodule.s3.module.s3_vector_search.data.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mdata.aws_caller_identity.current: Read complete after 0s [id=187091248012][0m
+[0m[1mmodule.ecs_cluster.aws_ecs_cluster.ecs_cluster: Refreshing state... [id=arn:aws:ecs:ap-southeast-2:187091248012:cluster/charmander-ecs-cluster][0m
+[0m[1mmodule.ecs_cluster.data.aws_ssm_parameter.ecs_optimized_ami: Read complete after 1s [id=/aws/service/ecs/optimized-ami/amazon-linux-2/recommended][0m
+[0m[1mmodule.s3.module.s3_source_crawl.aws_s3_bucket.this[0]: Refreshing state... [id=ctx-ai-chatbot-s3-source-crawl-187091248012][0m
+[0m[1mmodule.s3.module.s3_source_crawl.data.aws_region.current: Reading...[0m[0m
+[0m[1mmodule.s3.module.s3_source_crawl.data.aws_region.current: Read complete after 0s [id=ap-southeast-2][0m
+[0m[1mmodule.event_bridge.aws_cloudwatch_event_rule.scheduled_data_enriching_jobs: Refreshing state... [id=scheduled_data_enriching_jobs][0m
+[0m[1mmodule.s3.module.s3_vector_search.data.aws_caller_identity.current: Read complete after 0s [id=187091248012][0m
+[0m[1mmodule.s3.module.s3_source_crawl.data.aws_partition.current: Reading...[0m[0m
+[0m[1mmodule.s3.module.s3_source_crawl.data.aws_partition.current: Read complete after 0s [id=aws][0m
+[0m[1mmodule.dynamodb_table.module.dynamodb_table.aws_dynamodb_table.this[0]: Refreshing state... [id=ai-chatbot-session-chat][0m
+[0m[1mmodule.s3.module.s3_vector_search.data.aws_canonical_user_id.this[0]: Reading...[0m[0m
+[0m[1mmodule.s3.module.s3_vector_search.aws_s3_bucket.this[0]: Refreshing state... [id=ctx-ai-chatbot-s3-enriched-data-187091248012][0m
+[0m[1mmodule.event_bridge.aws_cloudwatch_event_rule.scheduled_crawling_jobs: Refreshing state... [id=scheduled_crawling_jobs][0m
+[0m[1mmodule.s3.module.s3_source_crawl.data.aws_canonical_user_id.this[0]: Read complete after 1s [id=39caaf1cc93660e4d1b5c2d69d83f560b432d37e7983179ebcbcc6c1c74e7ce3][0m
+[0m[1mmodule.s3.module.s3_vector_search.data.aws_canonical_user_id.this[0]: Read complete after 1s [id=39caaf1cc93660e4d1b5c2d69d83f560b432d37e7983179ebcbcc6c1c74e7ce3][0m
+[0m[1mmodule.vpc.module.vpc.aws_default_security_group.this[0]: Refreshing state... [id=sg-0c94607bd749ace19][0m
+[0m[1mmodule.vpc.module.vpc.aws_default_route_table.default[0]: Refreshing state... [id=rtb-0378fe0a6cbbe224e][0m
+[0m[1mmodule.vpc.module.vpc.aws_subnet.private[2]: Refreshing state... [id=subnet-0c1d45506fd56b509][0m
+[0m[1mmodule.vpc.module.vpc.aws_subnet.private[1]: Refreshing state... [id=subnet-00f73b518247362a9][0m
+[0m[1mmodule.vpc.module.vpc.aws_default_network_acl.this[0]: Refreshing state... [id=acl-01ec2c058dc8318b7][0m
+[0m[1mmodule.vpc.module.vpc.aws_subnet.private[0]: Refreshing state... [id=subnet-0a903e85edca5dd99][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table.private[0]: Refreshing state... [id=rtb-0bdaf018f937ed30b][0m
+[0m[1mmodule.vpc.module.vpc.aws_subnet.public[0]: Refreshing state... [id=subnet-08b4b91537c3d9675][0m
+[0m[1mmodule.vpc.module.vpc.aws_subnet.public[1]: Refreshing state... [id=subnet-07f682579499f4e72][0m
+[0m[1mmodule.vpc.module.vpc.aws_subnet.public[2]: Refreshing state... [id=subnet-0d0b3f7bc4bbcd1f0][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table.public[0]: Refreshing state... [id=rtb-0ba84f2d142d62ce0][0m
+[0m[1mmodule.vpc.module.vpc.aws_internet_gateway.this[0]: Refreshing state... [id=igw-0a9f2bc6d469d4b55][0m
+[0m[1mmodule.ecs_cluster.aws_security_group.security_group: Refreshing state... [id=sg-091eaade89eb284c0][0m
+[0m[1mmodule.ecs_cluster.aws_lb_target_group.ecs_tg: Refreshing state... [id=arn:aws:elasticloadbalancing:ap-southeast-2:187091248012:targetgroup/ecs-target-group/2d4548fdcc375662][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table_association.private[0]: Refreshing state... [id=rtbassoc-0efdc559f02e90c5b][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table_association.private[2]: Refreshing state... [id=rtbassoc-0b043fc6100056a7f][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table_association.private[1]: Refreshing state... [id=rtbassoc-0ee25cdcbf09f13a3][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table_association.public[2]: Refreshing state... [id=rtbassoc-02144a3fa30be9696][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table_association.public[0]: Refreshing state... [id=rtbassoc-07ba34c1da2cfe7d5][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table_association.public[1]: Refreshing state... [id=rtbassoc-0d8fa3476ccf013e1][0m
+[0m[1mmodule.vpc.module.vpc.aws_route.public_internet_gateway[0]: Refreshing state... [id=r-rtb-0ba84f2d142d62ce01080289494][0m
+[0m[1mmodule.vpc.module.vpc.aws_eip.nat[0]: Refreshing state... [id=eipalloc-0ac539f2ead4c9540][0m
+[0m[1mmodule.ecs_cluster.aws_launch_template.ecs_lt: Refreshing state... [id=lt-09e1de34625f027c0][0m
+[0m[1mmodule.ecs_cluster.aws_lb.ecs_alb: Refreshing state... [id=arn:aws:elasticloadbalancing:ap-southeast-2:187091248012:loadbalancer/app/ecs-alb/2aac27b6695ecb5c][0m
+[0m[1mmodule.vpc.module.vpc.aws_nat_gateway.this[0]: Refreshing state... [id=nat-0dcdd9c99c82e0e32][0m
+[0m[1mmodule.ecs_cluster.aws_autoscaling_group.ecs_asg: Refreshing state... [id=terraform-20250613004224218600000003][0m
+[0m[1mmodule.vpc.module.vpc.aws_route.private_nat_gateway[0]: Refreshing state... [id=r-rtb-0bdaf018f937ed30b1080289494][0m
+[0m[1mmodule.vpc_endpoints.aws_vpc_endpoint.s3_endpoint: Refreshing state... [id=vpce-0ebe2bdeb86c22b9e][0m
+[0m[1mmodule.vpc_endpoints.aws_vpc_endpoint.dynamodb_table_endpoint: Refreshing state... [id=vpce-0546e828bb43b74b7][0m
+[0m[1mmodule.sg.aws_security_group.alb_sg: Refreshing state... [id=sg-0e55b142e69e22e83][0m
+[0m[1mmodule.ecs_cluster.aws_lb_listener.ecs_alb_listener: Refreshing state... [id=arn:aws:elasticloadbalancing:ap-southeast-2:187091248012:listener/app/ecs-alb/2aac27b6695ecb5c/70c6143c1a4e9e48][0m
+[0m[1mmodule.sg.aws_security_group.server_sg: Refreshing state... [id=sg-003b4806d38372d10][0m
+[0m[1mmodule.ecs_cluster.aws_ecs_capacity_provider.ecs_capacity_provider: Refreshing state... [id=arn:aws:ecs:ap-southeast-2:187091248012:capacity-provider/test1][0m
+[0m[1mmodule.s3.module.s3_source_crawl.aws_s3_bucket_public_access_block.this[0]: Refreshing state... [id=ctx-ai-chatbot-s3-source-crawl-187091248012][0m
+[0m[1mmodule.s3.module.s3_source_crawl.aws_s3_bucket_versioning.this[0]: Refreshing state... [id=ctx-ai-chatbot-s3-source-crawl-187091248012][0m
+[0m[1mmodule.ec2.module.ec2.data.aws_partition.current: Reading...[0m[0m
+[0m[1mmodule.ec2.module.ec2.data.aws_partition.current: Read complete after 0s [id=aws][0m
+[0m[1mmodule.alb.module.alb.data.aws_partition.current: Reading...[0m[0m
+[0m[1mmodule.alb.module.alb.data.aws_partition.current: Read complete after 0s [id=aws][0m
+[0m[1mmodule.ec2.module.ec2.data.aws_iam_policy_document.assume_role_policy[0]: Reading...[0m[0m
+[0m[1mmodule.alb.module.alb.aws_security_group.this[0]: Refreshing state... [id=sg-08225a35c0184ab0a][0m
+[0m[1mmodule.ec2.module.ec2.data.aws_iam_policy_document.assume_role_policy[0]: Read complete after 0s [id=1256122602][0m
+[0m[1mmodule.ecs_cluster.aws_ecs_cluster_capacity_providers.example: Refreshing state... [id=charmander-ecs-cluster][0m
+[0m[1mmodule.ec2.module.ec2.aws_iam_role.this[0]: Refreshing state... [id=ai-chatbot-ec2-20250611222918050900000001][0m
+[0m[1mmodule.s3.module.s3_source_crawl.aws_s3_bucket_ownership_controls.this[0]: Refreshing state... [id=ctx-ai-chatbot-s3-source-crawl-187091248012][0m
+[0m[1mmodule.s3.module.s3_source_crawl.aws_s3_bucket_acl.this[0]: Refreshing state... [id=ctx-ai-chatbot-s3-source-crawl-187091248012,private][0m
+[0m[1mmodule.alb.module.alb.aws_lb.this[0]: Refreshing state... [id=arn:aws:elasticloadbalancing:ap-southeast-2:187091248012:loadbalancer/app/ai-chatbot-alb/13c4f3afec6f18f9][0m
+[0m[1mmodule.s3.module.s3_vector_search.aws_s3_bucket_versioning.this[0]: Refreshing state... [id=ctx-ai-chatbot-s3-enriched-data-187091248012][0m
+[0m[1mmodule.s3.module.s3_vector_search.aws_s3_bucket_public_access_block.this[0]: Refreshing state... [id=ctx-ai-chatbot-s3-enriched-data-187091248012][0m
+[0m[1mmodule.s3.module.s3_vector_search.aws_s3_bucket_ownership_controls.this[0]: Refreshing state... [id=ctx-ai-chatbot-s3-enriched-data-187091248012][0m
+[0m[1mmodule.ec2.module.ec2.aws_iam_role_policy_attachment.this["AmazonSSMManagedInstanceCore"]: Refreshing state... [id=ai-chatbot-ec2-20250611222918050900000001-20250611222920529500000003][0m
+[0m[1mmodule.ec2.module.ec2.aws_iam_instance_profile.this[0]: Refreshing state... [id=ai-chatbot-ec2-20250611222920223200000002][0m
+[0m[1mmodule.s3.module.s3_vector_search.aws_s3_bucket_acl.this[0]: Refreshing state... [id=ctx-ai-chatbot-s3-enriched-data-187091248012,private][0m
+[0m[1mmodule.ec2.module.ec2.aws_instance.this[0]: Refreshing state... [id=i-090f8d13138ddd576][0m
+[0m[1mmodule.iam.aws_iam_role.ecs_task_execution_role: Refreshing state... [id=ai-chatbot-task-execution-role][0m
+[0m[1mmodule.iam.aws_iam_role.ecs_task_role: Refreshing state... [id=ai-enrick-task-role][0m
+[0m[1mmodule.iam.aws_iam_role.ec2_role: Refreshing state... [id=ecs-ec2-role][0m
+[0m[1mmodule.iam.aws_iam_role.lambda_role: Refreshing state... [id=charmander-lambda-role][0m
+[0m[1mmodule.iam.aws_iam_role.bedrock_knowledge_base_role: Refreshing state... [id=charmander-bedrock-role][0m
+[0m[1mmodule.iam.aws_iam_role_policy_attachment.ecs_task_execution_role_policy: Refreshing state... [id=ai-chatbot-task-execution-role-20250613014239573400000002][0m
+[0m[1mmodule.iam.aws_iam_role_policy_attachment.ecs_task_s3_access: Refreshing state... [id=ai-enrick-task-role-20250613020459864600000001][0m
+[0m[1mmodule.iam.aws_iam_role_policy_attachment.lamba_attach_s3_policy: Refreshing state... [id=charmander-lambda-role-20250611203003751600000001][0m
+[0m[1mmodule.iam.aws_iam_role_policy_attachment.ecs_task_s3_role_policy: Refreshing state... [id=ai-chatbot-task-execution-role-20250613021004214400000002][0m
+[0m[1mmodule.iam.aws_iam_role_policy_attachment.lambda_attach_dynamodb_policy: Refreshing state... [id=charmander-lambda-role-20250611203004058900000002][0m
+[0m[1mmodule.iam.aws_iam_role_policy_attachment.lambda_basic: Refreshing state... [id=charmander-lambda-role-20250611205343328800000001][0m
+[0m[1mmodule.ecs_cluster.aws_ecs_task_definition.ecs_task_definition_enrich: Refreshing state... [id=enrich-ecs-task][0m
+[0m[1mmodule.iam.aws_iam_instance_profile.ec2_profile: Refreshing state... [id=ecs-ec2-profile][0m
+[0m[1mmodule.iam.aws_iam_role_policy_attachment.attach_ssm_policy: Refreshing state... [id=ecs-ec2-role-20250611103146970300000003][0m
+[0m[1mmodule.iam.aws_iam_role_policy_attachment.attach_s3_policy: Refreshing state... [id=ecs-ec2-role-20250611103146645300000002][0m
+[0m[1mmodule.iam.aws_iam_role_policy_attachment.attach_opensearch_policy: Refreshing state... [id=ecs-ec2-role-20250611103146970600000004][0m
+[0m[1mmodule.iam.aws_iam_role_policy_attachment.attach_dynamodb_policy: Refreshing state... [id=ecs-ec2-role-20250611103146325300000001][0m
+[0m[1mmodule.iam.aws_iam_role_policy_attachment.attach_bedrock_policy: Refreshing state... [id=ecs-ec2-role-20250611103147126300000005][0m
+[0m[1mmodule.opensearch_serverless.aws_opensearchserverless_security_policy.search_collection_encryption_policy: Refreshing state... [id=search-collection-encrypt-policy][0m
+[0m[1mmodule.ecs_cluster.aws_ecs_service.ecs_service: Refreshing state... [id=arn:aws:ecs:ap-southeast-2:187091248012:service/charmander-ecs-cluster/enrich-ecs-service][0m
+[0m[1mmodule.opensearch_serverless.aws_opensearchserverless_security_policy.search_collection_network_policy: Refreshing state... [id=search-collection-network-policy][0m
+[0m[1mmodule.iam.aws_iam_role_policy.bedrock_model_policy: Refreshing state... [id=charmander-bedrock-role:FoundationModelPolicy][0m
+[0m[1mmodule.iam.aws_iam_role_policy.s3_policy: Refreshing state... [id=charmander-bedrock-role:S3Policy][0m
+[0m[1mmodule.iam.aws_iam_role_policy.bedrock_opensearch_policy: Refreshing state... [id=charmander-bedrock-role:OSSPolicy][0m
+[0m[1mmodule.opensearch_serverless.aws_opensearchserverless_security_policy.vector_collection_encryption_policy: Refreshing state... [id=vector-collection-encrypt-policy][0m
+[0m[1mmodule.opensearch_serverless.aws_opensearchserverless_security_policy.vector_collection_network_policy: Refreshing state... [id=vector-collection-network-policy][0m
+[0m[1mmodule.opensearch_serverless.aws_opensearchserverless_collection.vector_collection: Refreshing state... [id=fq003giqwpbm51qao6ll][0m
+[0m[1mmodule.ecr.module.ecr.data.aws_partition.current: Reading...[0m[0m
+[0m[1mmodule.ecr.module.ecr.data.aws_partition.current: Read complete after 0s [id=aws][0m
+[0m[1mmodule.ecr.module.ecr.data.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mmodule.ecr.module.ecr.aws_ecr_repository.this[0]: Refreshing state... [id=ctx-lab/ai-chatbot][0m
+[0m[1mmodule.lambda.aws_lambda_function.s3_to_opensearch: Refreshing state... [id=s3-to-opensearch][0m
+[0m[1mmodule.lambda.aws_lambda_function.enrich_job: Refreshing state... [id=enrich_job][0m
+[0m[1mmodule.opensearch_serverless.aws_opensearchserverless_collection.search_collection: Refreshing state... [id=7x2u1y564s3t7dyrnx10][0m
+[0m[1mmodule.ecr.module.ecr.data.aws_caller_identity.current: Read complete after 1s [id=187091248012][0m
+[0m[1mmodule.ecr.module.ecr.data.aws_iam_policy_document.repository[0]: Reading...[0m[0m
+[0m[1mmodule.ecr.module.ecr.data.aws_iam_policy_document.repository[0]: Read complete after 0s [id=1050445251][0m
+[0m[1mmodule.opensearch_serverless.aws_opensearchserverless_access_policy.vector_collection_data_access_policy: Refreshing state... [id=vector-collection-access-policy][0m
+[0m[1mmodule.opensearch_serverless.aws_opensearchserverless_access_policy.search_collection_data_access_policy: Refreshing state... [id=search-collection-access-policy][0m
+[0m[1mmodule.opensearch_serverless.null_resource.wait_for_policy_sync_02: Refreshing state... [id=1354980443273795050][0m
+[0m[1mmodule.opensearch_serverless.opensearch_index.vector_collection_index: Refreshing state... [id=vector-collection-index][0m
+[0m[1mmodule.opensearch_serverless.null_resource.wait_for_policy_sync_01: Refreshing state... [id=7485718311394914140][0m
+[0m[1mmodule.opensearch_serverless.opensearch_index.search_collection_index: Refreshing state... [id=search-collection-index][0m
+[0m[1mmodule.ecr.module.ecr.aws_ecr_lifecycle_policy.this[0]: Refreshing state... [id=ctx-lab/ai-chatbot][0m
+[0m[1mmodule.ecr.module.ecr.aws_ecr_repository_policy.this[0]: Refreshing state... [id=ctx-lab/ai-chatbot][0m
+[0m[1mmodule.bedrock.aws_bedrockagent_knowledge_base.example-knowledge-base: Refreshing state... [id=VL43XKYC92][0m
+[0m[1mmodule.bedrock.aws_bedrockagent_data_source.data-source: Refreshing state... [id=OQ4ZI9TV9A,VL43XKYC92][0m
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [31m-[0m destroy[0m
+
+Terraform will perform the following actions:
+
+[1m  # module.ecs.module.alb.aws_lb.this[0][0m will be [1m[31mdestroyed[0m
+  # (because aws_lb.this is not in configuration)
+[0m  [31m-[0m[0m resource "aws_lb" "this" {
+      [31m-[0m[0m arn                                                          = "arn:aws:elasticloadbalancing:ap-southeast-2:187091248012:loadbalancer/app/ai-chatbot-ecs/ae06071ce4f2da22" [90m-> null[0m[0m
+      [31m-[0m[0m arn_suffix                                                   = "app/ai-chatbot-ecs/ae06071ce4f2da22" [90m-> null[0m[0m
+      [31m-[0m[0m client_keep_alive                                            = 3600 [90m-> null[0m[0m
+      [31m-[0m[0m desync_mitigation_mode                                       = "defensive" [90m-> null[0m[0m
+      [31m-[0m[0m dns_name                                                     = "ai-chatbot-ecs-2019801710.ap-southeast-2.elb.amazonaws.com" [90m-> null[0m[0m
+      [31m-[0m[0m drop_invalid_header_fields                                   = true [90m-> null[0m[0m
+      [31m-[0m[0m enable_cross_zone_load_balancing                             = true [90m-> null[0m[0m
+      [31m-[0m[0m enable_deletion_protection                                   = false [90m-> null[0m[0m
+      [31m-[0m[0m enable_http2                                                 = true [90m-> null[0m[0m
+      [31m-[0m[0m enable_tls_version_and_cipher_suite_headers                  = false [90m-> null[0m[0m
+      [31m-[0m[0m enable_waf_fail_open                                         = false [90m-> null[0m[0m
+      [31m-[0m[0m enable_xff_client_port                                       = false [90m-> null[0m[0m
+      [31m-[0m[0m enable_zonal_shift                                           = false [90m-> null[0m[0m
+      [31m-[0m[0m id                                                           = "arn:aws:elasticloadbalancing:ap-southeast-2:187091248012:loadbalancer/app/ai-chatbot-ecs/ae06071ce4f2da22" [90m-> null[0m[0m
+      [31m-[0m[0m idle_timeout                                                 = 60 [90m-> null[0m[0m
+      [31m-[0m[0m internal                                                     = false [90m-> null[0m[0m
+      [31m-[0m[0m ip_address_type                                              = "ipv4" [90m-> null[0m[0m
+      [31m-[0m[0m load_balancer_type                                           = "application" [90m-> null[0m[0m
+      [31m-[0m[0m name                                                         = "ai-chatbot-ecs" [90m-> null[0m[0m
+      [31m-[0m[0m preserve_host_header                                         = false [90m-> null[0m[0m
+      [31m-[0m[0m security_groups                                              = [
+          [31m-[0m[0m "sg-0bbe13802e7a5ce2c",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m subnets                                                      = [
+          [31m-[0m[0m "subnet-07f682579499f4e72",
+          [31m-[0m[0m "subnet-08b4b91537c3d9675",
+          [31m-[0m[0m "subnet-0d0b3f7bc4bbcd1f0",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m tags                                                         = {
+          [31m-[0m[0m "Name"                  = "ai-chatbot-ecs"
+          [31m-[0m[0m "terraform-aws-modules" = "alb"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all                                                     = {
+          [31m-[0m[0m "Name"                  = "ai-chatbot-ecs"
+          [31m-[0m[0m "Owner"                 = "CTX"
+          [31m-[0m[0m "Purpose"               = "lab-poc"
+          [31m-[0m[0m "Terraform"             = "true"
+          [31m-[0m[0m "terraform-aws-modules" = "alb"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m vpc_id                                                       = "vpc-010f0c49acfaea735" [90m-> null[0m[0m
+      [31m-[0m[0m xff_header_processing_mode                                   = "append" [90m-> null[0m[0m
+      [31m-[0m[0m zone_id                                                      = "Z1GM3OXH4ZPM65" [90m-> null[0m[0m
+        [90m# (3 unchanged attributes hidden)[0m[0m
+
+      [31m-[0m[0m access_logs {
+          [31m-[0m[0m enabled = false [90m-> null[0m[0m
+            [90m# (2 unchanged attributes hidden)[0m[0m
+        }
+
+      [31m-[0m[0m connection_logs {
+          [31m-[0m[0m enabled = false [90m-> null[0m[0m
+            [90m# (2 unchanged attributes hidden)[0m[0m
+        }
+
+      [31m-[0m[0m subnet_mapping {
+          [31m-[0m[0m subnet_id            = "subnet-07f682579499f4e72" [90m-> null[0m[0m
+            [90m# (4 unchanged attributes hidden)[0m[0m
+        }
+      [31m-[0m[0m subnet_mapping {
+          [31m-[0m[0m subnet_id            = "subnet-08b4b91537c3d9675" [90m-> null[0m[0m
+            [90m# (4 unchanged attributes hidden)[0m[0m
+        }
+      [31m-[0m[0m subnet_mapping {
+          [31m-[0m[0m subnet_id            = "subnet-0d0b3f7bc4bbcd1f0" [90m-> null[0m[0m
+            [90m# (4 unchanged attributes hidden)[0m[0m
+        }
+
+      [31m-[0m[0m timeouts {}
+    }
+
+[1m  # module.ecs.module.alb.aws_lb_listener.this["ex_http"][0m will be [1m[31mdestroyed[0m
+  # (because aws_lb_listener.this is not in configuration)
+[0m  [31m-[0m[0m resource "aws_lb_listener" "this" {
+      [31m-[0m[0m arn                                                                 = "arn:aws:elasticloadbalancing:ap-southeast-2:187091248012:listener/app/ai-chatbot-ecs/ae06071ce4f2da22/1ad8bb6d51795181" [90m-> null[0m[0m
+      [31m-[0m[0m id                                                                  = "arn:aws:elasticloadbalancing:ap-southeast-2:187091248012:listener/app/ai-chatbot-ecs/ae06071ce4f2da22/1ad8bb6d51795181" [90m-> null[0m[0m
+      [31m-[0m[0m load_balancer_arn                                                   = "arn:aws:elasticloadbalancing:ap-southeast-2:187091248012:loadbalancer/app/ai-chatbot-ecs/ae06071ce4f2da22" [90m-> null[0m[0m
+      [31m-[0m[0m port                                                                = 80 [90m-> null[0m[0m
+      [31m-[0m[0m protocol                                                            = "HTTP" [90m-> null[0m[0m
+      [31m-[0m[0m routing_http_response_server_enabled                                = true [90m-> null[0m[0m
+      [31m-[0m[0m tags                                                                = {
+          [31m-[0m[0m "Name"                  = "ai-chatbot-ecs"
+          [31m-[0m[0m "terraform-aws-modules" = "alb"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all                                                            = {
+          [31m-[0m[0m "Name"                  = "ai-chatbot-ecs"
+          [31m-[0m[0m "Owner"                 = "CTX"
+          [31m-[0m[0m "Purpose"               = "lab-poc"
+          [31m-[0m[0m "Terraform"             = "true"
+          [31m-[0m[0m "terraform-aws-modules" = "alb"
+        } [90m-> null[0m[0m
+        [90m# (11 unchanged attributes hidden)[0m[0m
+
+      [31m-[0m[0m default_action {
+          [31m-[0m[0m order            = 1 [90m-> null[0m[0m
+          [31m-[0m[0m target_group_arn = "arn:aws:elasticloadbalancing:ap-southeast-2:187091248012:targetgroup/tf-20250612081844176300000007/96876b579b46fdff" [90m-> null[0m[0m
+          [31m-[0m[0m type             = "forward" [90m-> null[0m[0m
+        }
+    }
+
+[1m  # module.ecs.module.alb.aws_lb_target_group.this["ex_ecs"][0m will be [1m[31mdestroyed[0m
+  # (because aws_lb_target_group.this is not in configuration)
+[0m  [31m-[0m[0m resource "aws_lb_target_group" "this" {
+      [31m-[0m[0m arn                                = "arn:aws:elasticloadbalancing:ap-southeast-2:187091248012:targetgroup/tf-20250612081844176300000007/96876b579b46fdff" [90m-> null[0m[0m
+      [31m-[0m[0m arn_suffix                         = "targetgroup/tf-20250612081844176300000007/96876b579b46fdff" [90m-> null[0m[0m
+      [31m-[0m[0m deregistration_delay               = "5" [90m-> null[0m[0m
+      [31m-[0m[0m id                                 = "arn:aws:elasticloadbalancing:ap-southeast-2:187091248012:targetgroup/tf-20250612081844176300000007/96876b579b46fdff" [90m-> null[0m[0m
+      [31m-[0m[0m ip_address_type                    = "ipv4" [90m-> null[0m[0m
+      [31m-[0m[0m lambda_multi_value_headers_enabled = false [90m-> null[0m[0m
+      [31m-[0m[0m load_balancer_arns                 = [
+          [31m-[0m[0m "arn:aws:elasticloadbalancing:ap-southeast-2:187091248012:loadbalancer/app/ai-chatbot-ecs/ae06071ce4f2da22",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m load_balancing_algorithm_type      = "round_robin" [90m-> null[0m[0m
+      [31m-[0m[0m load_balancing_anomaly_mitigation  = "off" [90m-> null[0m[0m
+      [31m-[0m[0m load_balancing_cross_zone_enabled  = "true" [90m-> null[0m[0m
+      [31m-[0m[0m name                               = "tf-20250612081844176300000007" [90m-> null[0m[0m
+      [31m-[0m[0m name_prefix                        = "tf-" [90m-> null[0m[0m
+      [31m-[0m[0m port                               = 80 [90m-> null[0m[0m
+      [31m-[0m[0m protocol                           = "HTTP" [90m-> null[0m[0m
+      [31m-[0m[0m protocol_version                   = "HTTP1" [90m-> null[0m[0m
+      [31m-[0m[0m proxy_protocol_v2                  = false [90m-> null[0m[0m
+      [31m-[0m[0m slow_start                         = 0 [90m-> null[0m[0m
+      [31m-[0m[0m tags                               = {
+          [31m-[0m[0m "Name"                  = "ai-chatbot-ecs"
+          [31m-[0m[0m "terraform-aws-modules" = "alb"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all                           = {
+          [31m-[0m[0m "Name"                  = "ai-chatbot-ecs"
+          [31m-[0m[0m "Owner"                 = "CTX"
+          [31m-[0m[0m "Purpose"               = "lab-poc"
+          [31m-[0m[0m "Terraform"             = "true"
+          [31m-[0m[0m "terraform-aws-modules" = "alb"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m target_type                        = "ip" [90m-> null[0m[0m
+      [31m-[0m[0m vpc_id                             = "vpc-010f0c49acfaea735" [90m-> null[0m[0m
+
+      [31m-[0m[0m health_check {
+          [31m-[0m[0m enabled             = true [90m-> null[0m[0m
+          [31m-[0m[0m healthy_threshold   = 5 [90m-> null[0m[0m
+          [31m-[0m[0m interval            = 30 [90m-> null[0m[0m
+          [31m-[0m[0m matcher             = "404" [90m-> null[0m[0m
+          [31m-[0m[0m path                = "/" [90m-> null[0m[0m
+          [31m-[0m[0m port                = "traffic-port" [90m-> null[0m[0m
+          [31m-[0m[0m protocol            = "HTTP" [90m-> null[0m[0m
+          [31m-[0m[0m timeout             = 5 [90m-> null[0m[0m
+          [31m-[0m[0m unhealthy_threshold = 2 [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m stickiness {
+          [31m-[0m[0m cookie_duration = 86400 [90m-> null[0m[0m
+          [31m-[0m[0m enabled         = false [90m-> null[0m[0m
+          [31m-[0m[0m type            = "lb_cookie" [90m-> null[0m[0m
+            [90m# (1 unchanged attribute hidden)[0m[0m
+        }
+
+      [31m-[0m[0m target_failover {}
+
+      [31m-[0m[0m target_group_health {
+          [31m-[0m[0m dns_failover {
+              [31m-[0m[0m minimum_healthy_targets_count      = "1" [90m-> null[0m[0m
+              [31m-[0m[0m minimum_healthy_targets_percentage = "off" [90m-> null[0m[0m
+            }
+          [31m-[0m[0m unhealthy_state_routing {
+              [31m-[0m[0m minimum_healthy_targets_count      = 1 [90m-> null[0m[0m
+              [31m-[0m[0m minimum_healthy_targets_percentage = "off" [90m-> null[0m[0m
+            }
+        }
+
+      [31m-[0m[0m target_health_state {}
+    }
+
+[1m  # module.ecs.module.alb.aws_security_group.this[0][0m will be [1m[31mdestroyed[0m
+  # (because aws_security_group.this is not in configuration)
+[0m  [31m-[0m[0m resource "aws_security_group" "this" {
+      [31m-[0m[0m arn                    = "arn:aws:ec2:ap-southeast-2:187091248012:security-group/sg-0bbe13802e7a5ce2c" [90m-> null[0m[0m
+      [31m-[0m[0m description            = "Security group for ai-chatbot-ecs application load balancer" [90m-> null[0m[0m
+      [31m-[0m[0m egress                 = [
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = [
+                  [31m-[0m[0m "10.30.0.0/16",
+                ]
+              [31m-[0m[0m from_port        = 0
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "-1"
+              [31m-[0m[0m security_groups  = []
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 0
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sg-0bbe13802e7a5ce2c" [90m-> null[0m[0m
+      [31m-[0m[0m ingress                = [
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = [
+                  [31m-[0m[0m "0.0.0.0/0",
+                ]
+              [31m-[0m[0m from_port        = 80
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "tcp"
+              [31m-[0m[0m security_groups  = []
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 80
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m name                   = "ai-chatbot-ecs-20250612081844175100000006" [90m-> null[0m[0m
+      [31m-[0m[0m name_prefix            = "ai-chatbot-ecs-" [90m-> null[0m[0m
+      [31m-[0m[0m owner_id               = "187091248012" [90m-> null[0m[0m
+      [31m-[0m[0m revoke_rules_on_delete = false [90m-> null[0m[0m
+      [31m-[0m[0m tags                   = {
+          [31m-[0m[0m "Name"                  = "ai-chatbot-ecs"
+          [31m-[0m[0m "terraform-aws-modules" = "alb"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {
+          [31m-[0m[0m "Name"                  = "ai-chatbot-ecs"
+          [31m-[0m[0m "Owner"                 = "CTX"
+          [31m-[0m[0m "Purpose"               = "lab-poc"
+          [31m-[0m[0m "Terraform"             = "true"
+          [31m-[0m[0m "terraform-aws-modules" = "alb"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m vpc_id                 = "vpc-010f0c49acfaea735" [90m-> null[0m[0m
+    }
+
+[1m  # module.ecs.module.alb.aws_vpc_security_group_egress_rule.this["all"][0m will be [1m[31mdestroyed[0m
+  # (because aws_vpc_security_group_egress_rule.this is not in configuration)
+[0m  [31m-[0m[0m resource "aws_vpc_security_group_egress_rule" "this" {
+      [31m-[0m[0m arn                    = "arn:aws:ec2:ap-southeast-2:187091248012:security-group-rule/sgr-0ceff1cad2eaa9882" [90m-> null[0m[0m
+      [31m-[0m[0m cidr_ipv4              = "10.30.0.0/16" [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sgr-0ceff1cad2eaa9882" [90m-> null[0m[0m
+      [31m-[0m[0m ip_protocol            = "-1" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_id      = "sg-0bbe13802e7a5ce2c" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_rule_id = "sgr-0ceff1cad2eaa9882" [90m-> null[0m[0m
+      [31m-[0m[0m tags                   = {
+          [31m-[0m[0m "Name"                  = "ai-chatbot-ecs"
+          [31m-[0m[0m "terraform-aws-modules" = "alb"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {
+          [31m-[0m[0m "Name"                  = "ai-chatbot-ecs"
+          [31m-[0m[0m "Owner"                 = "CTX"
+          [31m-[0m[0m "Purpose"               = "lab-poc"
+          [31m-[0m[0m "Terraform"             = "true"
+          [31m-[0m[0m "terraform-aws-modules" = "alb"
+        } [90m-> null[0m[0m
+    }
+
+[1m  # module.ecs.module.alb.aws_vpc_security_group_ingress_rule.this["all_http"][0m will be [1m[31mdestroyed[0m
+  # (because aws_vpc_security_group_ingress_rule.this is not in configuration)
+[0m  [31m-[0m[0m resource "aws_vpc_security_group_ingress_rule" "this" {
+      [31m-[0m[0m arn                    = "arn:aws:ec2:ap-southeast-2:187091248012:security-group-rule/sgr-031849d0181f58d4f" [90m-> null[0m[0m
+      [31m-[0m[0m cidr_ipv4              = "0.0.0.0/0" [90m-> null[0m[0m
+      [31m-[0m[0m from_port              = 80 [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sgr-031849d0181f58d4f" [90m-> null[0m[0m
+      [31m-[0m[0m ip_protocol            = "tcp" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_id      = "sg-0bbe13802e7a5ce2c" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_rule_id = "sgr-031849d0181f58d4f" [90m-> null[0m[0m
+      [31m-[0m[0m tags                   = {
+          [31m-[0m[0m "Name"                  = "ai-chatbot-ecs"
+          [31m-[0m[0m "terraform-aws-modules" = "alb"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {
+          [31m-[0m[0m "Name"                  = "ai-chatbot-ecs"
+          [31m-[0m[0m "Owner"                 = "CTX"
+          [31m-[0m[0m "Purpose"               = "lab-poc"
+          [31m-[0m[0m "Terraform"             = "true"
+          [31m-[0m[0m "terraform-aws-modules" = "alb"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m to_port                = 80 [90m-> null[0m[0m
+    }
+
+[1m  # module.ecs.module.autoscaling["single_instance"].aws_autoscaling_group.idc[0][0m will be [1m[31mdestroyed[0m
+  # (because aws_autoscaling_group.idc is not in configuration)
+[0m  [31m-[0m[0m resource "aws_autoscaling_group" "idc" {
+      [31m-[0m[0m arn                              = "arn:aws:autoscaling:ap-southeast-2:187091248012:autoScalingGroup:3f0891d8-1f26-4b60-b774-56e2d24a7d76:autoScalingGroupName/ai-chatbot-ecs-single_instance-20250612101624169000000007" [90m-> null[0m[0m
+      [31m-[0m[0m availability_zones               = [
+          [31m-[0m[0m "ap-southeast-2a",
+          [31m-[0m[0m "ap-southeast-2b",
+          [31m-[0m[0m "ap-southeast-2c",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m capacity_rebalance               = false [90m-> null[0m[0m
+      [31m-[0m[0m default_cooldown                 = 300 [90m-> null[0m[0m
+      [31m-[0m[0m default_instance_warmup          = 0 [90m-> null[0m[0m
+      [31m-[0m[0m desired_capacity                 = 1 [90m-> null[0m[0m
+      [31m-[0m[0m enabled_metrics                  = [] [90m-> null[0m[0m
+      [31m-[0m[0m force_delete                     = false [90m-> null[0m[0m
+      [31m-[0m[0m force_delete_warm_pool           = false [90m-> null[0m[0m
+      [31m-[0m[0m health_check_grace_period        = 300 [90m-> null[0m[0m
+      [31m-[0m[0m health_check_type                = "EC2" [90m-> null[0m[0m
+      [31m-[0m[0m id                               = "ai-chatbot-ecs-single_instance-20250612101624169000000007" [90m-> null[0m[0m
+      [31m-[0m[0m ignore_failed_scaling_activities = false [90m-> null[0m[0m
+      [31m-[0m[0m load_balancers                   = [] [90m-> null[0m[0m
+      [31m-[0m[0m max_instance_lifetime            = 0 [90m-> null[0m[0m
+      [31m-[0m[0m max_size                         = 1 [90m-> null[0m[0m
+      [31m-[0m[0m metrics_granularity              = "1Minute" [90m-> null[0m[0m
+      [31m-[0m[0m min_size                         = 1 [90m-> null[0m[0m
+      [31m-[0m[0m name                             = "ai-chatbot-ecs-single_instance-20250612101624169000000007" [90m-> null[0m[0m
+      [31m-[0m[0m name_prefix                      = "ai-chatbot-ecs-single_instance-" [90m-> null[0m[0m
+      [31m-[0m[0m predicted_capacity               = 0 [90m-> null[0m[0m
+      [31m-[0m[0m protect_from_scale_in            = false [90m-> null[0m[0m
+      [31m-[0m[0m service_linked_role_arn          = "arn:aws:iam::187091248012:role/aws-service-role/autoscaling.amazonaws.com/AWSServiceRoleForAutoScaling" [90m-> null[0m[0m
+      [31m-[0m[0m suspended_processes              = [] [90m-> null[0m[0m
+      [31m-[0m[0m target_group_arns                = [] [90m-> null[0m[0m
+      [31m-[0m[0m termination_policies             = [] [90m-> null[0m[0m
+      [31m-[0m[0m vpc_zone_identifier              = [
+          [31m-[0m[0m "subnet-00f73b518247362a9",
+          [31m-[0m[0m "subnet-0a903e85edca5dd99",
+          [31m-[0m[0m "subnet-0c1d45506fd56b509",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m wait_for_capacity_timeout        = "10m" [90m-> null[0m[0m
+      [31m-[0m[0m warm_pool_size                   = 0 [90m-> null[0m[0m
+        [90m# (4 unchanged attributes hidden)[0m[0m
+
+      [31m-[0m[0m availability_zone_distribution {
+          [31m-[0m[0m capacity_distribution_strategy = "balanced-best-effort" [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m capacity_reservation_specification {
+          [31m-[0m[0m capacity_reservation_preference = "default" [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m launch_template {
+          [31m-[0m[0m id      = "lt-0d4ba7112414116ca" [90m-> null[0m[0m
+          [31m-[0m[0m name    = "ai-chatbot-ecs-single_instance-20250612101617381400000005" [90m-> null[0m[0m
+          [31m-[0m[0m version = "2" [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m tag {
+          [31m-[0m[0m key                 = "AmazonECSManaged" [90m-> null[0m[0m
+          [31m-[0m[0m propagate_at_launch = true [90m-> null[0m[0m
+          [31m-[0m[0m value               = "true" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m tag {
+          [31m-[0m[0m key                 = "Name" [90m-> null[0m[0m
+          [31m-[0m[0m propagate_at_launch = true [90m-> null[0m[0m
+          [31m-[0m[0m value               = "ai-chatbot-ecs-single_instance" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m tag {
+          [31m-[0m[0m key                 = "Owner" [90m-> null[0m[0m
+          [31m-[0m[0m propagate_at_launch = true [90m-> null[0m[0m
+          [31m-[0m[0m value               = "CTX" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m tag {
+          [31m-[0m[0m key                 = "Purpose" [90m-> null[0m[0m
+          [31m-[0m[0m propagate_at_launch = true [90m-> null[0m[0m
+          [31m-[0m[0m value               = "lab-poc" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m tag {
+          [31m-[0m[0m key                 = "Terraform" [90m-> null[0m[0m
+          [31m-[0m[0m propagate_at_launch = true [90m-> null[0m[0m
+          [31m-[0m[0m value               = "true" [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m timeouts {}
+    }
+
+[1m  # module.ecs.module.autoscaling["single_instance"].aws_iam_instance_profile.this[0][0m will be [1m[31mdestroyed[0m
+  # (because aws_iam_instance_profile.this is not in configuration)
+[0m  [31m-[0m[0m resource "aws_iam_instance_profile" "this" {
+      [31m-[0m[0m arn         = "arn:aws:iam::187091248012:instance-profile/ai-chatbot-ecs-20250612101609001200000002" [90m-> null[0m[0m
+      [31m-[0m[0m create_date = "2025-06-12T10:16:09Z" [90m-> null[0m[0m
+      [31m-[0m[0m id          = "ai-chatbot-ecs-20250612101609001200000002" [90m-> null[0m[0m
+      [31m-[0m[0m name        = "ai-chatbot-ecs-20250612101609001200000002" [90m-> null[0m[0m
+      [31m-[0m[0m name_prefix = "ai-chatbot-ecs-" [90m-> null[0m[0m
+      [31m-[0m[0m path        = "/" [90m-> null[0m[0m
+      [31m-[0m[0m role        = "ai-chatbot-ecs-20250612101606973900000001" [90m-> null[0m[0m
+      [31m-[0m[0m tags        = {
+          [31m-[0m[0m "Name" = "ai-chatbot-ecs"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all    = {
+          [31m-[0m[0m "Name"      = "ai-chatbot-ecs"
+          [31m-[0m[0m "Owner"     = "CTX"
+          [31m-[0m[0m "Purpose"   = "lab-poc"
+          [31m-[0m[0m "Terraform" = "true"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m unique_id   = "AIPASXD4B4OGI6PW6NUQK" [90m-> null[0m[0m
+    }
+
+[1m  # module.ecs.module.autoscaling["single_instance"].aws_iam_role.this[0][0m will be [1m[31mdestroyed[0m
+  # (because aws_iam_role.this is not in configuration)
+[0m  [31m-[0m[0m resource "aws_iam_role" "this" {
+      [31m-[0m[0m arn                   = "arn:aws:iam::187091248012:role/ai-chatbot-ecs-20250612101606973900000001" [90m-> null[0m[0m
+      [31m-[0m[0m assume_role_policy    = jsonencode(
+            {
+              [31m-[0m[0m Statement = [
+                  [31m-[0m[0m {
+                      [31m-[0m[0m Action    = "sts:AssumeRole"
+                      [31m-[0m[0m Effect    = "Allow"
+                      [31m-[0m[0m Principal = {
+                          [31m-[0m[0m Service = "ec2.amazonaws.com"
+                        }
+                      [31m-[0m[0m Sid       = "EC2AssumeRole"
+                    },
+                ]
+              [31m-[0m[0m Version   = "2012-10-17"
+            }
+        ) [90m-> null[0m[0m
+      [31m-[0m[0m create_date           = "2025-06-12T10:16:07Z" [90m-> null[0m[0m
+      [31m-[0m[0m description           = "ECS role for ai-chatbot-ecs" [90m-> null[0m[0m
+      [31m-[0m[0m force_detach_policies = true [90m-> null[0m[0m
+      [31m-[0m[0m id                    = "ai-chatbot-ecs-20250612101606973900000001" [90m-> null[0m[0m
+      [31m-[0m[0m managed_policy_arns   = [
+          [31m-[0m[0m "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore",
+          [31m-[0m[0m "arn:aws:iam::aws:policy/service-role/AmazonEC2ContainerServiceforEC2Role",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m max_session_duration  = 3600 [90m-> null[0m[0m
+      [31m-[0m[0m name                  = "ai-chatbot-ecs-20250612101606973900000001" [90m-> null[0m[0m
+      [31m-[0m[0m name_prefix           = "ai-chatbot-ecs-" [90m-> null[0m[0m
+      [31m-[0m[0m path                  = "/" [90m-> null[0m[0m
+      [31m-[0m[0m tags                  = {
+          [31m-[0m[0m "Name" = "ai-chatbot-ecs"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all              = {
+          [31m-[0m[0m "Name"      = "ai-chatbot-ecs"
+          [31m-[0m[0m "Owner"     = "CTX"
+          [31m-[0m[0m "Purpose"   = "lab-poc"
+          [31m-[0m[0m "Terraform" = "true"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m unique_id             = "AROASXD4B4OGEPLKWNG2S" [90m-> null[0m[0m
+        [90m# (1 unchanged attribute hidden)[0m[0m
+    }
+
+[1m  # module.ecs.module.autoscaling["single_instance"].aws_iam_role_policy_attachment.this["AmazonEC2ContainerServiceforEC2Role"][0m will be [1m[31mdestroyed[0m
+  # (because aws_iam_role_policy_attachment.this is not in configuration)
+[0m  [31m-[0m[0m resource "aws_iam_role_policy_attachment" "this" {
+      [31m-[0m[0m id         = "ai-chatbot-ecs-20250612101606973900000001-20250612101609709300000004" [90m-> null[0m[0m
+      [31m-[0m[0m policy_arn = "arn:aws:iam::aws:policy/service-role/AmazonEC2ContainerServiceforEC2Role" [90m-> null[0m[0m
+      [31m-[0m[0m role       = "ai-chatbot-ecs-20250612101606973900000001" [90m-> null[0m[0m
+    }
+
+[1m  # module.ecs.module.autoscaling["single_instance"].aws_iam_role_policy_attachment.this["AmazonSSMManagedInstanceCore"][0m will be [1m[31mdestroyed[0m
+  # (because aws_iam_role_policy_attachment.this is not in configuration)
+[0m  [31m-[0m[0m resource "aws_iam_role_policy_attachment" "this" {
+      [31m-[0m[0m id         = "ai-chatbot-ecs-20250612101606973900000001-20250612101609342900000003" [90m-> null[0m[0m
+      [31m-[0m[0m policy_arn = "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore" [90m-> null[0m[0m
+      [31m-[0m[0m role       = "ai-chatbot-ecs-20250612101606973900000001" [90m-> null[0m[0m
+    }
+
+[1m  # module.ecs.module.autoscaling["single_instance"].aws_launch_template.this[0][0m will be [1m[31mdestroyed[0m
+  # (because aws_launch_template.this is not in configuration)
+[0m  [31m-[0m[0m resource "aws_launch_template" "this" {
+      [31m-[0m[0m arn                                  = "arn:aws:ec2:ap-southeast-2:187091248012:launch-template/lt-0d4ba7112414116ca" [90m-> null[0m[0m
+      [31m-[0m[0m default_version                      = 1 [90m-> null[0m[0m
+      [31m-[0m[0m disable_api_stop                     = false [90m-> null[0m[0m
+      [31m-[0m[0m disable_api_termination              = false [90m-> null[0m[0m
+      [31m-[0m[0m id                                   = "lt-0d4ba7112414116ca" [90m-> null[0m[0m
+      [31m-[0m[0m image_id                             = (sensitive value) [90m-> null[0m[0m
+      [31m-[0m[0m instance_type                        = "t3.medium" [90m-> null[0m[0m
+      [31m-[0m[0m latest_version                       = 2 [90m-> null[0m[0m
+      [31m-[0m[0m name                                 = "ai-chatbot-ecs-single_instance-20250612101617381400000005" [90m-> null[0m[0m
+      [31m-[0m[0m name_prefix                          = "ai-chatbot-ecs-single_instance-" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_names                 = [] [90m-> null[0m[0m
+      [31m-[0m[0m tags                                 = {
+          [31m-[0m[0m "Name" = "ai-chatbot-ecs"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all                             = {
+          [31m-[0m[0m "Name"      = "ai-chatbot-ecs"
+          [31m-[0m[0m "Owner"     = "CTX"
+          [31m-[0m[0m "Purpose"   = "lab-poc"
+          [31m-[0m[0m "Terraform" = "true"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m user_data                            = "IyEvYmluL2Jhc2gKCmNhdCA8PCdFT0YnID4+IC9ldGMvZWNzL2Vjcy5jb25maWcKRUNTX0NMVVNURVI9YWktY2hhdGJvdC1lY3MKRUNTX0xPR0xFVkVMPWRlYnVnCkVDU19DT05UQUlORVJfSU5TVEFOQ0VfVEFHUz17Ik5hbWUiOiJhaS1jaGF0Ym90LWVjcyJ9CkVDU19FTkFCTEVfVEFTS19JQU1fUk9MRT10cnVlCkVPRgo=" [90m-> null[0m[0m
+      [31m-[0m[0m vpc_security_group_ids               = [
+          [31m-[0m[0m "sg-0efc7e3b4e8e836c4",
+        ] [90m-> null[0m[0m
+        [90m# (6 unchanged attributes hidden)[0m[0m
+
+      [31m-[0m[0m iam_instance_profile {
+          [31m-[0m[0m arn  = "arn:aws:iam::187091248012:instance-profile/ai-chatbot-ecs-20250612101609001200000002" [90m-> null[0m[0m
+            name = [90mnull[0m[0m
+        }
+
+      [31m-[0m[0m monitoring {
+          [31m-[0m[0m enabled = true [90m-> null[0m[0m
+        }
+    }
+
+[1m  # module.ecs.module.autoscaling_sg.aws_security_group.this_name_prefix[0][0m will be [1m[31mdestroyed[0m
+  # (because aws_security_group.this_name_prefix is not in configuration)
+[0m  [31m-[0m[0m resource "aws_security_group" "this_name_prefix" {
+      [31m-[0m[0m arn                    = "arn:aws:ec2:ap-southeast-2:187091248012:security-group/sg-0efc7e3b4e8e836c4" [90m-> null[0m[0m
+      [31m-[0m[0m description            = "Autoscaling group security group" [90m-> null[0m[0m
+      [31m-[0m[0m egress                 = [
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = [
+                  [31m-[0m[0m "0.0.0.0/0",
+                ]
+              [31m-[0m[0m description      = "All protocols"
+              [31m-[0m[0m from_port        = 0
+              [31m-[0m[0m ipv6_cidr_blocks = [
+                  [31m-[0m[0m "::/0",
+                ]
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "-1"
+              [31m-[0m[0m security_groups  = []
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 0
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sg-0efc7e3b4e8e836c4" [90m-> null[0m[0m
+      [31m-[0m[0m ingress                = [
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = []
+              [31m-[0m[0m description      = "Ingress Rule"
+              [31m-[0m[0m from_port        = 80
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "tcp"
+              [31m-[0m[0m security_groups  = [
+                  [31m-[0m[0m "sg-0bbe13802e7a5ce2c",
+                ]
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 80
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m name                   = "ai-chatbot-ecs-20250612081844174800000005" [90m-> null[0m[0m
+      [31m-[0m[0m name_prefix            = "ai-chatbot-ecs-" [90m-> null[0m[0m
+      [31m-[0m[0m owner_id               = "187091248012" [90m-> null[0m[0m
+      [31m-[0m[0m revoke_rules_on_delete = false [90m-> null[0m[0m
+      [31m-[0m[0m tags                   = {
+          [31m-[0m[0m "Name" = "ai-chatbot-ecs"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {
+          [31m-[0m[0m "Name"      = "ai-chatbot-ecs"
+          [31m-[0m[0m "Owner"     = "CTX"
+          [31m-[0m[0m "Purpose"   = "lab-poc"
+          [31m-[0m[0m "Terraform" = "true"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m vpc_id                 = "vpc-010f0c49acfaea735" [90m-> null[0m[0m
+
+      [31m-[0m[0m timeouts {
+          [31m-[0m[0m create = "10m" [90m-> null[0m[0m
+          [31m-[0m[0m delete = "15m" [90m-> null[0m[0m
+        }
+    }
+
+[1m  # module.ecs.module.autoscaling_sg.aws_security_group_rule.computed_ingress_with_source_security_group_id[0][0m will be [1m[31mdestroyed[0m
+  # (because aws_security_group_rule.computed_ingress_with_source_security_group_id is not in configuration)
+[0m  [31m-[0m[0m resource "aws_security_group_rule" "computed_ingress_with_source_security_group_id" {
+      [31m-[0m[0m description              = "Ingress Rule" [90m-> null[0m[0m
+      [31m-[0m[0m from_port                = 80 [90m-> null[0m[0m
+      [31m-[0m[0m id                       = "sgrule-763456588" [90m-> null[0m[0m
+      [31m-[0m[0m prefix_list_ids          = [] [90m-> null[0m[0m
+      [31m-[0m[0m protocol                 = "tcp" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_id        = "sg-0efc7e3b4e8e836c4" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_rule_id   = "sgr-0cfb04ee1de929367" [90m-> null[0m[0m
+      [31m-[0m[0m self                     = false [90m-> null[0m[0m
+      [31m-[0m[0m source_security_group_id = "sg-0bbe13802e7a5ce2c" [90m-> null[0m[0m
+      [31m-[0m[0m to_port                  = 80 [90m-> null[0m[0m
+      [31m-[0m[0m type                     = "ingress" [90m-> null[0m[0m
+    }
+
+[1m  # module.ecs.module.autoscaling_sg.aws_security_group_rule.egress_rules[0][0m will be [1m[31mdestroyed[0m
+  # (because aws_security_group_rule.egress_rules is not in configuration)
+[0m  [31m-[0m[0m resource "aws_security_group_rule" "egress_rules" {
+      [31m-[0m[0m cidr_blocks            = [
+          [31m-[0m[0m "0.0.0.0/0",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m description            = "All protocols" [90m-> null[0m[0m
+      [31m-[0m[0m from_port              = 0 [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sgrule-3645600062" [90m-> null[0m[0m
+      [31m-[0m[0m ipv6_cidr_blocks       = [
+          [31m-[0m[0m "::/0",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m prefix_list_ids        = [] [90m-> null[0m[0m
+      [31m-[0m[0m protocol               = "-1" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_id      = "sg-0efc7e3b4e8e836c4" [90m-> null[0m[0m
+      [31m-[0m[0m self                   = false [90m-> null[0m[0m
+      [31m-[0m[0m to_port                = 0 [90m-> null[0m[0m
+      [31m-[0m[0m type                   = "egress" [90m-> null[0m[0m
+        [90m# (1 unchanged attribute hidden)[0m[0m
+    }
+
+[1m  # module.ecs.module.ecs_cluster.aws_cloudwatch_log_group.this[0][0m will be [1m[31mdestroyed[0m
+  # (because aws_cloudwatch_log_group.this is not in configuration)
+[0m  [31m-[0m[0m resource "aws_cloudwatch_log_group" "this" {
+      [31m-[0m[0m arn               = "arn:aws:logs:ap-southeast-2:187091248012:log-group:/aws/ecs/ai-chatbot-ecs" [90m-> null[0m[0m
+      [31m-[0m[0m id                = "/aws/ecs/ai-chatbot-ecs" [90m-> null[0m[0m
+      [31m-[0m[0m log_group_class   = "STANDARD" [90m-> null[0m[0m
+      [31m-[0m[0m name              = "/aws/ecs/ai-chatbot-ecs" [90m-> null[0m[0m
+      [31m-[0m[0m retention_in_days = 90 [90m-> null[0m[0m
+      [31m-[0m[0m skip_destroy      = false [90m-> null[0m[0m
+      [31m-[0m[0m tags              = {} [90m-> null[0m[0m
+      [31m-[0m[0m tags_all          = {
+          [31m-[0m[0m "Owner"     = "CTX"
+          [31m-[0m[0m "Purpose"   = "lab-poc"
+          [31m-[0m[0m "Terraform" = "true"
+        } [90m-> null[0m[0m
+        [90m# (2 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.ecs.module.ecs_cluster.aws_ecs_capacity_provider.this["single_instance"][0m will be [1m[31mdestroyed[0m
+  # (because aws_ecs_capacity_provider.this is not in configuration)
+[0m  [31m-[0m[0m resource "aws_ecs_capacity_provider" "this" {
+      [31m-[0m[0m arn      = "arn:aws:ecs:ap-southeast-2:187091248012:capacity-provider/single_instance" [90m-> null[0m[0m
+      [31m-[0m[0m id       = "arn:aws:ecs:ap-southeast-2:187091248012:capacity-provider/single_instance" [90m-> null[0m[0m
+      [31m-[0m[0m name     = "single_instance" [90m-> null[0m[0m
+      [31m-[0m[0m tags     = {} [90m-> null[0m[0m
+      [31m-[0m[0m tags_all = {
+          [31m-[0m[0m "Owner"     = "CTX"
+          [31m-[0m[0m "Purpose"   = "lab-poc"
+          [31m-[0m[0m "Terraform" = "true"
+        } [90m-> null[0m[0m
+
+      [31m-[0m[0m auto_scaling_group_provider {
+          [31m-[0m[0m auto_scaling_group_arn         = "arn:aws:autoscaling:ap-southeast-2:187091248012:autoScalingGroup:3f0891d8-1f26-4b60-b774-56e2d24a7d76:autoScalingGroupName/ai-chatbot-ecs-single_instance-20250612101624169000000007" [90m-> null[0m[0m
+          [31m-[0m[0m managed_draining               = "ENABLED" [90m-> null[0m[0m
+          [31m-[0m[0m managed_termination_protection = "DISABLED" [90m-> null[0m[0m
+
+          [31m-[0m[0m managed_scaling {
+              [31m-[0m[0m instance_warmup_period    = 0 [90m-> null[0m[0m
+              [31m-[0m[0m maximum_scaling_step_size = 1 [90m-> null[0m[0m
+              [31m-[0m[0m minimum_scaling_step_size = 1 [90m-> null[0m[0m
+              [31m-[0m[0m status                    = "ENABLED" [90m-> null[0m[0m
+              [31m-[0m[0m target_capacity           = 100 [90m-> null[0m[0m
+            }
+        }
+    }
+
+[1m  # module.ecs.module.ecs_cluster.aws_ecs_cluster.this[0][0m will be [1m[31mdestroyed[0m
+  # (because aws_ecs_cluster.this is not in configuration)
+[0m  [31m-[0m[0m resource "aws_ecs_cluster" "this" {
+      [31m-[0m[0m arn      = "arn:aws:ecs:ap-southeast-2:187091248012:cluster/ai-chatbot-ecs" [90m-> null[0m[0m
+      [31m-[0m[0m id       = "arn:aws:ecs:ap-southeast-2:187091248012:cluster/ai-chatbot-ecs" [90m-> null[0m[0m
+      [31m-[0m[0m name     = "ai-chatbot-ecs" [90m-> null[0m[0m
+      [31m-[0m[0m tags     = {} [90m-> null[0m[0m
+      [31m-[0m[0m tags_all = {
+          [31m-[0m[0m "Owner"     = "CTX"
+          [31m-[0m[0m "Purpose"   = "lab-poc"
+          [31m-[0m[0m "Terraform" = "true"
+        } [90m-> null[0m[0m
+
+      [31m-[0m[0m configuration {
+          [31m-[0m[0m execute_command_configuration {
+              [31m-[0m[0m logging    = "DEFAULT" [90m-> null[0m[0m
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            }
+        }
+
+      [31m-[0m[0m setting {
+          [31m-[0m[0m name  = "containerInsights" [90m-> null[0m[0m
+          [31m-[0m[0m value = "enabled" [90m-> null[0m[0m
+        }
+    }
+
+[1m  # module.ecs.module.ecs_cluster.aws_ecs_cluster_capacity_providers.this[0][0m will be [1m[31mdestroyed[0m
+  # (because aws_ecs_cluster_capacity_providers.this is not in configuration)
+[0m  [31m-[0m[0m resource "aws_ecs_cluster_capacity_providers" "this" {
+      [31m-[0m[0m capacity_providers = [
+          [31m-[0m[0m "single_instance",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m cluster_name       = "ai-chatbot-ecs" [90m-> null[0m[0m
+      [31m-[0m[0m id                 = "ai-chatbot-ecs" [90m-> null[0m[0m
+    }
+
+[1m  # module.ecs.module.ecs_service_scheduled_crawling_jobs.aws_appautoscaling_policy.this["cpu"][0m will be [1m[31mdestroyed[0m
+  # (because aws_appautoscaling_policy.this is not in configuration)
+[0m  [31m-[0m[0m resource "aws_appautoscaling_policy" "this" {
+      [31m-[0m[0m alarm_arns         = [
+          [31m-[0m[0m "arn:aws:cloudwatch:ap-southeast-2:187091248012:alarm:TargetTracking-service/ai-chatbot-ecs/scheduled_crawling_jobs-AlarmHigh-63d16c06-9f55-4759-8a9e-b7fb8de88076",
+          [31m-[0m[0m "arn:aws:cloudwatch:ap-southeast-2:187091248012:alarm:TargetTracking-service/ai-chatbot-ecs/scheduled_crawling_jobs-AlarmLow-aa190d19-5396-4e86-b8a4-e7832704d107",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m arn                = "arn:aws:autoscaling:ap-southeast-2:187091248012:scalingPolicy:08e255c8-d822-4b46-9abc-d92e1f6db7a1:resource/ecs/service/ai-chatbot-ecs/scheduled_crawling_jobs:policyName/cpu" [90m-> null[0m[0m
+      [31m-[0m[0m id                 = "cpu" [90m-> null[0m[0m
+      [31m-[0m[0m name               = "cpu" [90m-> null[0m[0m
+      [31m-[0m[0m policy_type        = "TargetTrackingScaling" [90m-> null[0m[0m
+      [31m-[0m[0m resource_id        = "service/ai-chatbot-ecs/scheduled_crawling_jobs" [90m-> null[0m[0m
+      [31m-[0m[0m scalable_dimension = "ecs:service:DesiredCount" [90m-> null[0m[0m
+      [31m-[0m[0m service_namespace  = "ecs" [90m-> null[0m[0m
+
+      [31m-[0m[0m target_tracking_scaling_policy_configuration {
+          [31m-[0m[0m disable_scale_in   = false [90m-> null[0m[0m
+          [31m-[0m[0m scale_in_cooldown  = 300 [90m-> null[0m[0m
+          [31m-[0m[0m scale_out_cooldown = 60 [90m-> null[0m[0m
+          [31m-[0m[0m target_value       = 75 [90m-> null[0m[0m
+
+          [31m-[0m[0m predefined_metric_specification {
+              [31m-[0m[0m predefined_metric_type = "ECSServiceAverageCPUUtilization" [90m-> null[0m[0m
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            }
+        }
+    }
+
+[1m  # module.ecs.module.ecs_service_scheduled_crawling_jobs.aws_appautoscaling_policy.this["memory"][0m will be [1m[31mdestroyed[0m
+  # (because aws_appautoscaling_policy.this is not in configuration)
+[0m  [31m-[0m[0m resource "aws_appautoscaling_policy" "this" {
+      [31m-[0m[0m alarm_arns         = [
+          [31m-[0m[0m "arn:aws:cloudwatch:ap-southeast-2:187091248012:alarm:TargetTracking-service/ai-chatbot-ecs/scheduled_crawling_jobs-AlarmHigh-de25e22a-2cdc-40e5-b617-e7d43b2b7504",
+          [31m-[0m[0m "arn:aws:cloudwatch:ap-southeast-2:187091248012:alarm:TargetTracking-service/ai-chatbot-ecs/scheduled_crawling_jobs-AlarmLow-c36c4321-34d1-48bc-afb2-4699f1526e82",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m arn                = "arn:aws:autoscaling:ap-southeast-2:187091248012:scalingPolicy:08e255c8-d822-4b46-9abc-d92e1f6db7a1:resource/ecs/service/ai-chatbot-ecs/scheduled_crawling_jobs:policyName/memory" [90m-> null[0m[0m
+      [31m-[0m[0m id                 = "memory" [90m-> null[0m[0m
+      [31m-[0m[0m name               = "memory" [90m-> null[0m[0m
+      [31m-[0m[0m policy_type        = "TargetTrackingScaling" [90m-> null[0m[0m
+      [31m-[0m[0m resource_id        = "service/ai-chatbot-ecs/scheduled_crawling_jobs" [90m-> null[0m[0m
+      [31m-[0m[0m scalable_dimension = "ecs:service:DesiredCount" [90m-> null[0m[0m
+      [31m-[0m[0m service_namespace  = "ecs" [90m-> null[0m[0m
+
+      [31m-[0m[0m target_tracking_scaling_policy_configuration {
+          [31m-[0m[0m disable_scale_in   = false [90m-> null[0m[0m
+          [31m-[0m[0m scale_in_cooldown  = 300 [90m-> null[0m[0m
+          [31m-[0m[0m scale_out_cooldown = 60 [90m-> null[0m[0m
+          [31m-[0m[0m target_value       = 75 [90m-> null[0m[0m
+
+          [31m-[0m[0m predefined_metric_specification {
+              [31m-[0m[0m predefined_metric_type = "ECSServiceAverageMemoryUtilization" [90m-> null[0m[0m
+                [90m# (1 unchanged attribute hidden)[0m[0m
+            }
+        }
+    }
+
+[1m  # module.ecs.module.ecs_service_scheduled_crawling_jobs.aws_appautoscaling_target.this[0][0m will be [1m[31mdestroyed[0m
+  # (because aws_appautoscaling_target.this is not in configuration)
+[0m  [31m-[0m[0m resource "aws_appautoscaling_target" "this" {
+      [31m-[0m[0m arn                = "arn:aws:application-autoscaling:ap-southeast-2:187091248012:scalable-target/0ec508e255c8d8224b469abcd92e1f6db7a1" [90m-> null[0m[0m
+      [31m-[0m[0m id                 = "service/ai-chatbot-ecs/scheduled_crawling_jobs" [90m-> null[0m[0m
+      [31m-[0m[0m max_capacity       = 10 [90m-> null[0m[0m
+      [31m-[0m[0m min_capacity       = 1 [90m-> null[0m[0m
+      [31m-[0m[0m resource_id        = "service/ai-chatbot-ecs/scheduled_crawling_jobs" [90m-> null[0m[0m
+      [31m-[0m[0m role_arn           = "arn:aws:iam::187091248012:role/aws-service-role/ecs.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling_ECSService" [90m-> null[0m[0m
+      [31m-[0m[0m scalable_dimension = "ecs:service:DesiredCount" [90m-> null[0m[0m
+      [31m-[0m[0m service_namespace  = "ecs" [90m-> null[0m[0m
+      [31m-[0m[0m tags               = {
+          [31m-[0m[0m "Name" = "ai-chatbot-ecs"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all           = {
+          [31m-[0m[0m "Name"      = "ai-chatbot-ecs"
+          [31m-[0m[0m "Owner"     = "CTX"
+          [31m-[0m[0m "Purpose"   = "lab-poc"
+          [31m-[0m[0m "Terraform" = "true"
+        } [90m-> null[0m[0m
+
+      [31m-[0m[0m suspended_state {
+          [31m-[0m[0m dynamic_scaling_in_suspended  = false [90m-> null[0m[0m
+          [31m-[0m[0m dynamic_scaling_out_suspended = false [90m-> null[0m[0m
+          [31m-[0m[0m scheduled_scaling_suspended   = false [90m-> null[0m[0m
+        }
+    }
+
+[1m  # module.ecs.module.ecs_service_scheduled_crawling_jobs.aws_ecs_service.this[0][0m will be [1m[31mdestroyed[0m
+  # (because aws_ecs_service.this is not in configuration)
+[0m  [31m-[0m[0m resource "aws_ecs_service" "this" {
+      [31m-[0m[0m availability_zone_rebalancing      = "DISABLED" [90m-> null[0m[0m
+      [31m-[0m[0m cluster                            = "arn:aws:ecs:ap-southeast-2:187091248012:cluster/ai-chatbot-ecs" [90m-> null[0m[0m
+      [31m-[0m[0m deployment_maximum_percent         = 200 [90m-> null[0m[0m
+      [31m-[0m[0m deployment_minimum_healthy_percent = 0 [90m-> null[0m[0m
+      [31m-[0m[0m desired_count                      = 1 [90m-> null[0m[0m
+      [31m-[0m[0m enable_ecs_managed_tags            = true [90m-> null[0m[0m
+      [31m-[0m[0m enable_execute_command             = false [90m-> null[0m[0m
+      [31m-[0m[0m force_new_deployment               = true [90m-> null[0m[0m
+      [31m-[0m[0m health_check_grace_period_seconds  = 0 [90m-> null[0m[0m
+      [31m-[0m[0m iam_role                           = "/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS" [90m-> null[0m[0m
+      [31m-[0m[0m id                                 = "arn:aws:ecs:ap-southeast-2:187091248012:service/ai-chatbot-ecs/scheduled_crawling_jobs" [90m-> null[0m[0m
+      [31m-[0m[0m name                               = "scheduled_crawling_jobs" [90m-> null[0m[0m
+      [31m-[0m[0m propagate_tags                     = "NONE" [90m-> null[0m[0m
+      [31m-[0m[0m scheduling_strategy                = "REPLICA" [90m-> null[0m[0m
+      [31m-[0m[0m tags                               = {
+          [31m-[0m[0m "Name" = "ai-chatbot-ecs"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all                           = {
+          [31m-[0m[0m "Name"      = "ai-chatbot-ecs"
+          [31m-[0m[0m "Owner"     = "CTX"
+          [31m-[0m[0m "Purpose"   = "lab-poc"
+          [31m-[0m[0m "Terraform" = "true"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m task_definition                    = "scheduled_crawling_jobs:6" [90m-> null[0m[0m
+      [31m-[0m[0m triggers                           = {} [90m-> null[0m[0m
+      [31m-[0m[0m wait_for_steady_state              = false [90m-> null[0m[0m
+        [90m# (2 unchanged attributes hidden)[0m[0m
+
+      [31m-[0m[0m capacity_provider_strategy {
+          [31m-[0m[0m base              = 1 [90m-> null[0m[0m
+          [31m-[0m[0m capacity_provider = "single_instance" [90m-> null[0m[0m
+          [31m-[0m[0m weight            = 100 [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m deployment_circuit_breaker {
+          [31m-[0m[0m enable   = false [90m-> null[0m[0m
+          [31m-[0m[0m rollback = false [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m deployment_controller {
+          [31m-[0m[0m type = "ECS" [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m load_balancer {
+          [31m-[0m[0m container_name   = "scheduled_crawling_jobs" [90m-> null[0m[0m
+          [31m-[0m[0m container_port   = 80 [90m-> null[0m[0m
+          [31m-[0m[0m target_group_arn = "arn:aws:elasticloadbalancing:ap-southeast-2:187091248012:targetgroup/tf-20250612081844176300000007/96876b579b46fdff" [90m-> null[0m[0m
+            [90m# (1 unchanged attribute hidden)[0m[0m
+        }
+
+      [31m-[0m[0m network_configuration {
+          [31m-[0m[0m assign_public_ip = false [90m-> null[0m[0m
+          [31m-[0m[0m security_groups  = [
+              [31m-[0m[0m "sg-07f63dd723ac07c42",
+            ] [90m-> null[0m[0m
+          [31m-[0m[0m subnets          = [
+              [31m-[0m[0m "subnet-00f73b518247362a9",
+              [31m-[0m[0m "subnet-0a903e85edca5dd99",
+              [31m-[0m[0m "subnet-0c1d45506fd56b509",
+            ] [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m timeouts {}
+    }
+
+[1m  # module.ecs.module.ecs_service_scheduled_crawling_jobs.aws_ecs_task_definition.this[0][0m will be [1m[31mdestroyed[0m
+  # (because aws_ecs_task_definition.this is not in configuration)
+[0m  [31m-[0m[0m resource "aws_ecs_task_definition" "this" {
+      [31m-[0m[0m arn                      = "arn:aws:ecs:ap-southeast-2:187091248012:task-definition/scheduled_crawling_jobs:6" [90m-> null[0m[0m
+      [31m-[0m[0m arn_without_revision     = "arn:aws:ecs:ap-southeast-2:187091248012:task-definition/scheduled_crawling_jobs" [90m-> null[0m[0m
+      [31m-[0m[0m container_definitions    = jsonencode(
+            [
+              [31m-[0m[0m {
+                  [31m-[0m[0m cpu                    = 1024
+                  [31m-[0m[0m environment            = []
+                  [31m-[0m[0m essential              = true
+                  [31m-[0m[0m image                  = "187091248012.dkr.ecr.ap-southeast-2.amazonaws.com/ctx-lab/ai-chatbot:scoring_agent_1.0"
+                  [31m-[0m[0m interactive            = false
+                  [31m-[0m[0m linuxParameters        = {
+                      [31m-[0m[0m initProcessEnabled = false
+                    }
+                  [31m-[0m[0m logConfiguration       = {
+                      [31m-[0m[0m logDriver = "awslogs"
+                      [31m-[0m[0m options   = {
+                          [31m-[0m[0m awslogs-group         = "/aws/ecs/scheduled_crawling_jobs/scheduled_crawling_jobs"
+                          [31m-[0m[0m awslogs-region        = "ap-southeast-2"
+                          [31m-[0m[0m awslogs-stream-prefix = "ecs"
+                        }
+                    }
+                  [31m-[0m[0m memory                 = 1024
+                  [31m-[0m[0m mountPoints            = [
+                      [31m-[0m[0m {
+                          [31m-[0m[0m containerPath = "/var/www/my-vol"
+                          [31m-[0m[0m sourceVolume  = "my-vol"
+                        },
+                    ]
+                  [31m-[0m[0m name                   = "scheduled_crawling_jobs"
+                  [31m-[0m[0m portMappings           = [
+                      [31m-[0m[0m {
+                          [31m-[0m[0m containerPort = 80
+                          [31m-[0m[0m hostPort      = 80
+                          [31m-[0m[0m name          = "scheduled_crawling_jobs"
+                          [31m-[0m[0m protocol      = "tcp"
+                        },
+                    ]
+                  [31m-[0m[0m privileged             = false
+                  [31m-[0m[0m pseudoTerminal         = false
+                  [31m-[0m[0m readonlyRootFilesystem = false
+                  [31m-[0m[0m startTimeout           = 30
+                  [31m-[0m[0m stopTimeout            = 120
+                  [31m-[0m[0m systemControls         = []
+                  [31m-[0m[0m user                   = "0"
+                  [31m-[0m[0m volumesFrom            = []
+                },
+            ]
+        ) [90m-> null[0m[0m
+      [31m-[0m[0m cpu                      = "1024" [90m-> null[0m[0m
+      [31m-[0m[0m enable_fault_injection   = false [90m-> null[0m[0m
+      [31m-[0m[0m execution_role_arn       = "arn:aws:iam::187091248012:role/scheduled_crawling_jobs-20250612081844235100000009" [90m-> null[0m[0m
+      [31m-[0m[0m family                   = "scheduled_crawling_jobs" [90m-> null[0m[0m
+      [31m-[0m[0m id                       = "scheduled_crawling_jobs" [90m-> null[0m[0m
+      [31m-[0m[0m memory                   = "2048" [90m-> null[0m[0m
+      [31m-[0m[0m network_mode             = "awsvpc" [90m-> null[0m[0m
+      [31m-[0m[0m requires_compatibilities = [
+          [31m-[0m[0m "EC2",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m revision                 = 6 [90m-> null[0m[0m
+      [31m-[0m[0m skip_destroy             = false [90m-> null[0m[0m
+      [31m-[0m[0m tags                     = {
+          [31m-[0m[0m "Name" = "ai-chatbot-ecs"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all                 = {
+          [31m-[0m[0m "Name"      = "ai-chatbot-ecs"
+          [31m-[0m[0m "Owner"     = "CTX"
+          [31m-[0m[0m "Purpose"   = "lab-poc"
+          [31m-[0m[0m "Terraform" = "true"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m task_role_arn            = "arn:aws:iam::187091248012:role/scheduled_crawling_jobs-20250612081844174500000003" [90m-> null[0m[0m
+      [31m-[0m[0m track_latest             = false [90m-> null[0m[0m
+        [90m# (2 unchanged attributes hidden)[0m[0m
+
+      [31m-[0m[0m runtime_platform {
+          [31m-[0m[0m cpu_architecture        = "X86_64" [90m-> null[0m[0m
+          [31m-[0m[0m operating_system_family = "LINUX" [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m volume {
+          [31m-[0m[0m configure_at_launch = false [90m-> null[0m[0m
+          [31m-[0m[0m name                = "my-vol" [90m-> null[0m[0m
+            [90m# (1 unchanged attribute hidden)[0m[0m
+        }
+    }
+
+[1m  # module.ecs.module.ecs_service_scheduled_crawling_jobs.aws_iam_policy.task_exec[0][0m will be [1m[31mdestroyed[0m
+  # (because aws_iam_policy.task_exec is not in configuration)
+[0m  [31m-[0m[0m resource "aws_iam_policy" "task_exec" {
+      [31m-[0m[0m arn              = "arn:aws:iam::187091248012:policy/scheduled_crawling_jobs-20250612081844204000000008" [90m-> null[0m[0m
+      [31m-[0m[0m attachment_count = 1 [90m-> null[0m[0m
+      [31m-[0m[0m description      = "Task execution role IAM policy" [90m-> null[0m[0m
+      [31m-[0m[0m id               = "arn:aws:iam::187091248012:policy/scheduled_crawling_jobs-20250612081844204000000008" [90m-> null[0m[0m
+      [31m-[0m[0m name             = "scheduled_crawling_jobs-20250612081844204000000008" [90m-> null[0m[0m
+      [31m-[0m[0m name_prefix      = "scheduled_crawling_jobs-" [90m-> null[0m[0m
+      [31m-[0m[0m path             = "/" [90m-> null[0m[0m
+      [31m-[0m[0m policy           = jsonencode(
+            {
+              [31m-[0m[0m Statement = [
+                  [31m-[0m[0m {
+                      [31m-[0m[0m Action   = [
+                          [31m-[0m[0m "logs:PutLogEvents",
+                          [31m-[0m[0m "logs:CreateLogStream",
+                        ]
+                      [31m-[0m[0m Effect   = "Allow"
+                      [31m-[0m[0m Resource = "*"
+                      [31m-[0m[0m Sid      = "Logs"
+                    },
+                  [31m-[0m[0m {
+                      [31m-[0m[0m Action   = [
+                          [31m-[0m[0m "ecr:GetDownloadUrlForLayer",
+                          [31m-[0m[0m "ecr:GetAuthorizationToken",
+                          [31m-[0m[0m "ecr:BatchGetImage",
+                          [31m-[0m[0m "ecr:BatchCheckLayerAvailability",
+                        ]
+                      [31m-[0m[0m Effect   = "Allow"
+                      [31m-[0m[0m Resource = "*"
+                      [31m-[0m[0m Sid      = "ECR"
+                    },
+                  [31m-[0m[0m {
+                      [31m-[0m[0m Action   = "ssm:GetParameters"
+                      [31m-[0m[0m Effect   = "Allow"
+                      [31m-[0m[0m Resource = "arn:aws:ssm:*:*:parameter/*"
+                      [31m-[0m[0m Sid      = "GetSSMParams"
+                    },
+                  [31m-[0m[0m {
+                      [31m-[0m[0m Action   = "secretsmanager:GetSecretValue"
+                      [31m-[0m[0m Effect   = "Allow"
+                      [31m-[0m[0m Resource = "arn:aws:secretsmanager:*:*:secret:*"
+                      [31m-[0m[0m Sid      = "GetSecrets"
+                    },
+                ]
+              [31m-[0m[0m Version   = "2012-10-17"
+            }
+        ) [90m-> null[0m[0m
+      [31m-[0m[0m policy_id        = "ANPASXD4B4OGENKKUZKOS" [90m-> null[0m[0m
+      [31m-[0m[0m tags             = {
+          [31m-[0m[0m "Name" = "ai-chatbot-ecs"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all         = {
+          [31m-[0m[0m "Name"      = "ai-chatbot-ecs"
+          [31m-[0m[0m "Owner"     = "CTX"
+          [31m-[0m[0m "Purpose"   = "lab-poc"
+          [31m-[0m[0m "Terraform" = "true"
+        } [90m-> null[0m[0m
+    }
+
+[1m  # module.ecs.module.ecs_service_scheduled_crawling_jobs.aws_iam_role.task_exec[0][0m will be [1m[31mdestroyed[0m
+  # (because aws_iam_role.task_exec is not in configuration)
+[0m  [31m-[0m[0m resource "aws_iam_role" "task_exec" {
+      [31m-[0m[0m arn                   = "arn:aws:iam::187091248012:role/scheduled_crawling_jobs-20250612081844235100000009" [90m-> null[0m[0m
+      [31m-[0m[0m assume_role_policy    = jsonencode(
+            {
+              [31m-[0m[0m Statement = [
+                  [31m-[0m[0m {
+                      [31m-[0m[0m Action    = "sts:AssumeRole"
+                      [31m-[0m[0m Effect    = "Allow"
+                      [31m-[0m[0m Principal = {
+                          [31m-[0m[0m Service = "ecs-tasks.amazonaws.com"
+                        }
+                      [31m-[0m[0m Sid       = "ECSTaskExecutionAssumeRole"
+                    },
+                ]
+              [31m-[0m[0m Version   = "2012-10-17"
+            }
+        ) [90m-> null[0m[0m
+      [31m-[0m[0m create_date           = "2025-06-12T08:18:45Z" [90m-> null[0m[0m
+      [31m-[0m[0m description           = "Task execution role for scheduled_crawling_jobs" [90m-> null[0m[0m
+      [31m-[0m[0m force_detach_policies = true [90m-> null[0m[0m
+      [31m-[0m[0m id                    = "scheduled_crawling_jobs-20250612081844235100000009" [90m-> null[0m[0m
+      [31m-[0m[0m managed_policy_arns   = [
+          [31m-[0m[0m "arn:aws:iam::187091248012:policy/scheduled_crawling_jobs-20250612081844204000000008",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m max_session_duration  = 3600 [90m-> null[0m[0m
+      [31m-[0m[0m name                  = "scheduled_crawling_jobs-20250612081844235100000009" [90m-> null[0m[0m
+      [31m-[0m[0m name_prefix           = "scheduled_crawling_jobs-" [90m-> null[0m[0m
+      [31m-[0m[0m path                  = "/" [90m-> null[0m[0m
+      [31m-[0m[0m tags                  = {
+          [31m-[0m[0m "Name" = "ai-chatbot-ecs"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all              = {
+          [31m-[0m[0m "Name"      = "ai-chatbot-ecs"
+          [31m-[0m[0m "Owner"     = "CTX"
+          [31m-[0m[0m "Purpose"   = "lab-poc"
+          [31m-[0m[0m "Terraform" = "true"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m unique_id             = "AROASXD4B4OGJBCRP7NLC" [90m-> null[0m[0m
+        [90m# (1 unchanged attribute hidden)[0m[0m
+    }
+
+[1m  # module.ecs.module.ecs_service_scheduled_crawling_jobs.aws_iam_role.tasks[0][0m will be [1m[31mdestroyed[0m
+  # (because aws_iam_role.tasks is not in configuration)
+[0m  [31m-[0m[0m resource "aws_iam_role" "tasks" {
+      [31m-[0m[0m arn                   = "arn:aws:iam::187091248012:role/scheduled_crawling_jobs-20250612081844174500000003" [90m-> null[0m[0m
+      [31m-[0m[0m assume_role_policy    = jsonencode(
+            {
+              [31m-[0m[0m Statement = [
+                  [31m-[0m[0m {
+                      [31m-[0m[0m Action    = "sts:AssumeRole"
+                      [31m-[0m[0m Condition = {
+                          [31m-[0m[0m ArnLike      = {
+                              [31m-[0m[0m "aws:SourceArn" = "arn:aws:ecs:ap-southeast-2:187091248012:*"
+                            }
+                          [31m-[0m[0m StringEquals = {
+                              [31m-[0m[0m "aws:SourceAccount" = "187091248012"
+                            }
+                        }
+                      [31m-[0m[0m Effect    = "Allow"
+                      [31m-[0m[0m Principal = {
+                          [31m-[0m[0m Service = "ecs-tasks.amazonaws.com"
+                        }
+                      [31m-[0m[0m Sid       = "ECSTasksAssumeRole"
+                    },
+                ]
+              [31m-[0m[0m Version   = "2012-10-17"
+            }
+        ) [90m-> null[0m[0m
+      [31m-[0m[0m create_date           = "2025-06-12T08:18:45Z" [90m-> null[0m[0m
+      [31m-[0m[0m force_detach_policies = true [90m-> null[0m[0m
+      [31m-[0m[0m id                    = "scheduled_crawling_jobs-20250612081844174500000003" [90m-> null[0m[0m
+      [31m-[0m[0m managed_policy_arns   = [] [90m-> null[0m[0m
+      [31m-[0m[0m max_session_duration  = 3600 [90m-> null[0m[0m
+      [31m-[0m[0m name                  = "scheduled_crawling_jobs-20250612081844174500000003" [90m-> null[0m[0m
+      [31m-[0m[0m name_prefix           = "scheduled_crawling_jobs-" [90m-> null[0m[0m
+      [31m-[0m[0m path                  = "/" [90m-> null[0m[0m
+      [31m-[0m[0m tags                  = {
+          [31m-[0m[0m "Name" = "ai-chatbot-ecs"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all              = {
+          [31m-[0m[0m "Name"      = "ai-chatbot-ecs"
+          [31m-[0m[0m "Owner"     = "CTX"
+          [31m-[0m[0m "Purpose"   = "lab-poc"
+          [31m-[0m[0m "Terraform" = "true"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m unique_id             = "AROASXD4B4OGG3OP2KK5B" [90m-> null[0m[0m
+        [90m# (2 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.ecs.module.ecs_service_scheduled_crawling_jobs.aws_iam_role_policy_attachment.task_exec[0][0m will be [1m[31mdestroyed[0m
+  # (because aws_iam_role_policy_attachment.task_exec is not in configuration)
+[0m  [31m-[0m[0m resource "aws_iam_role_policy_attachment" "task_exec" {
+      [31m-[0m[0m id         = "scheduled_crawling_jobs-20250612081844235100000009-2025061208184658010000000c" [90m-> null[0m[0m
+      [31m-[0m[0m policy_arn = "arn:aws:iam::187091248012:policy/scheduled_crawling_jobs-20250612081844204000000008" [90m-> null[0m[0m
+      [31m-[0m[0m role       = "scheduled_crawling_jobs-20250612081844235100000009" [90m-> null[0m[0m
+    }
+
+[1m  # module.ecs.module.ecs_service_scheduled_crawling_jobs.aws_security_group.this[0][0m will be [1m[31mdestroyed[0m
+  # (because aws_security_group.this is not in configuration)
+[0m  [31m-[0m[0m resource "aws_security_group" "this" {
+      [31m-[0m[0m arn                    = "arn:aws:ec2:ap-southeast-2:187091248012:security-group/sg-07f63dd723ac07c42" [90m-> null[0m[0m
+      [31m-[0m[0m description            = "Managed by Terraform" [90m-> null[0m[0m
+      [31m-[0m[0m egress                 = [
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = [
+                  [31m-[0m[0m "0.0.0.0/0",
+                ]
+              [31m-[0m[0m description      = "All outbound traffic"
+              [31m-[0m[0m from_port        = 0
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "-1"
+              [31m-[0m[0m security_groups  = []
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 0
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sg-07f63dd723ac07c42" [90m-> null[0m[0m
+      [31m-[0m[0m ingress                = [
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_blocks      = []
+              [31m-[0m[0m description      = "Service port"
+              [31m-[0m[0m from_port        = 80
+              [31m-[0m[0m ipv6_cidr_blocks = []
+              [31m-[0m[0m prefix_list_ids  = []
+              [31m-[0m[0m protocol         = "tcp"
+              [31m-[0m[0m security_groups  = [
+                  [31m-[0m[0m "sg-0bbe13802e7a5ce2c",
+                ]
+              [31m-[0m[0m self             = false
+              [31m-[0m[0m to_port          = 80
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m name                   = "scheduled_crawling_jobs-20250613021004947200000003" [90m-> null[0m[0m
+      [31m-[0m[0m name_prefix            = "scheduled_crawling_jobs-" [90m-> null[0m[0m
+      [31m-[0m[0m owner_id               = "187091248012" [90m-> null[0m[0m
+      [31m-[0m[0m revoke_rules_on_delete = false [90m-> null[0m[0m
+      [31m-[0m[0m tags                   = {
+          [31m-[0m[0m "Name" = "scheduled_crawling_jobs"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all               = {
+          [31m-[0m[0m "Name"      = "scheduled_crawling_jobs"
+          [31m-[0m[0m "Owner"     = "CTX"
+          [31m-[0m[0m "Purpose"   = "lab-poc"
+          [31m-[0m[0m "Terraform" = "true"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m vpc_id                 = "vpc-010f0c49acfaea735" [90m-> null[0m[0m
+    }
+
+[1m  # module.ecs.module.ecs_service_scheduled_crawling_jobs.aws_security_group_rule.this["alb_http_ingress"][0m will be [1m[31mdestroyed[0m
+  # (because aws_security_group_rule.this is not in configuration)
+[0m  [31m-[0m[0m resource "aws_security_group_rule" "this" {
+      [31m-[0m[0m description              = "Service port" [90m-> null[0m[0m
+      [31m-[0m[0m from_port                = 80 [90m-> null[0m[0m
+      [31m-[0m[0m id                       = "sgrule-2274003588" [90m-> null[0m[0m
+      [31m-[0m[0m protocol                 = "tcp" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_id        = "sg-07f63dd723ac07c42" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_rule_id   = "sgr-069ee1a13089073d2" [90m-> null[0m[0m
+      [31m-[0m[0m self                     = false [90m-> null[0m[0m
+      [31m-[0m[0m source_security_group_id = "sg-0bbe13802e7a5ce2c" [90m-> null[0m[0m
+      [31m-[0m[0m to_port                  = 80 [90m-> null[0m[0m
+      [31m-[0m[0m type                     = "ingress" [90m-> null[0m[0m
+    }
+
+[1m  # module.ecs.module.ecs_service_scheduled_crawling_jobs.aws_security_group_rule.this["all_egress"][0m will be [1m[31mdestroyed[0m
+  # (because aws_security_group_rule.this is not in configuration)
+[0m  [31m-[0m[0m resource "aws_security_group_rule" "this" {
+      [31m-[0m[0m cidr_blocks            = [
+          [31m-[0m[0m "0.0.0.0/0",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m description            = "All outbound traffic" [90m-> null[0m[0m
+      [31m-[0m[0m from_port              = 0 [90m-> null[0m[0m
+      [31m-[0m[0m id                     = "sgrule-76947631" [90m-> null[0m[0m
+      [31m-[0m[0m protocol               = "-1" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_id      = "sg-07f63dd723ac07c42" [90m-> null[0m[0m
+      [31m-[0m[0m security_group_rule_id = "sgr-0e88a144c74617504" [90m-> null[0m[0m
+      [31m-[0m[0m self                   = false [90m-> null[0m[0m
+      [31m-[0m[0m to_port                = 0 [90m-> null[0m[0m
+      [31m-[0m[0m type                   = "egress" [90m-> null[0m[0m
+    }
+
+[1m  # module.ecs.module.ecs_service_scheduled_crawling_jobs.module.container_definition["scheduled_crawling_jobs"].aws_cloudwatch_log_group.this[0][0m will be [1m[31mdestroyed[0m
+  # (because aws_cloudwatch_log_group.this is not in configuration)
+[0m  [31m-[0m[0m resource "aws_cloudwatch_log_group" "this" {
+      [31m-[0m[0m arn               = "arn:aws:logs:ap-southeast-2:187091248012:log-group:/aws/ecs/scheduled_crawling_jobs/scheduled_crawling_jobs" [90m-> null[0m[0m
+      [31m-[0m[0m id                = "/aws/ecs/scheduled_crawling_jobs/scheduled_crawling_jobs" [90m-> null[0m[0m
+      [31m-[0m[0m log_group_class   = "STANDARD" [90m-> null[0m[0m
+      [31m-[0m[0m name              = "/aws/ecs/scheduled_crawling_jobs/scheduled_crawling_jobs" [90m-> null[0m[0m
+      [31m-[0m[0m retention_in_days = 14 [90m-> null[0m[0m
+      [31m-[0m[0m skip_destroy      = false [90m-> null[0m[0m
+      [31m-[0m[0m tags              = {
+          [31m-[0m[0m "Name" = "ai-chatbot-ecs"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all          = {
+          [31m-[0m[0m "Name"      = "ai-chatbot-ecs"
+          [31m-[0m[0m "Owner"     = "CTX"
+          [31m-[0m[0m "Purpose"   = "lab-poc"
+          [31m-[0m[0m "Terraform" = "true"
+        } [90m-> null[0m[0m
+        [90m# (2 unchanged attributes hidden)[0m[0m
+    }
+
+[1mPlan:[0m 0 to add, 0 to change, 32 to destroy.
+[0m[90m
+─────────────────────────────────────────────────────────────────────────────[0m
+
+Note: You didn't use the -out option to save this plan, so Terraform can't
+guarantee to take exactly these actions if you run "terraform apply" now.
+Releasing state lock. This may take a few moments...

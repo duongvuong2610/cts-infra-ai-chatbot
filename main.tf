@@ -437,8 +437,16 @@ module "event_bridge" {
 module "lambda" {
   source = "./modules/lambda"
 
-  lambda_function = {
+  s3_to_opensearch = {
     function_name = "s3-to-opensearch"
+    role          = module.iam.lambda_role_arn
+    filename      = "./modules/lambda/lambda.zip"
+    handler       = "index.handler"
+    runtime       = "python3.9"
+  }
+
+  enrich_job = {
+    function_name = "enrich_job"
     role          = module.iam.lambda_role_arn
     filename      = "./modules/lambda/lambda.zip"
     handler       = "index.handler"
@@ -448,21 +456,13 @@ module "lambda" {
   depends_on = [module.iam]
 }
 
-module "ecs" {
-  source = "./modules/ecs"
-
-  ecs_cluster = {
-    name = "ai-chatbot-cluster"
-  }
-}
-
 module "ec2" {
   source = "./modules/ec2"
 
   ec2_instance = {
     name                   = "ai-chatbot-ec2"
     subnet_id              = element(module.vpc.private_subnets, 0)
-    instance_type          = "m5.large"
+    instance_type          = "t3.medium"
     ami                    = "ami-00543daa0ad4d3ea4"
     vpc_security_group_ids = [module.sg.server_sg_id]
   }
@@ -481,4 +481,11 @@ module "alb" {
   }
 
   depends_on = [module.vpc, module.sg]
+}
+
+module "ecs_cluster" {
+  source              = "./modules/ecs_cluster"
+  vpc_zone_identifier = module.vpc.public_subnets
+  vpc_id              = module.vpc.vpc_id
+  task_role_arn       = module.iam.ecs_task_role_arn
 }
